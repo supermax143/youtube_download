@@ -11,6 +11,8 @@ import os
 from pathlib import Path
 import queue
 import json
+import subprocess
+import re
 
 class YouTubeDownloaderGUI:
     def __init__(self, root):
@@ -216,12 +218,27 @@ class YouTubeDownloaderGUI:
             # Configure for audio only
             if download_type in ['audio', 'playlist_audio']:
                 ydl_opts['format'] = 'bestaudio/best'
-                ydl_opts['postprocessors'] = [{
-                    'key': 'FFmpegExtractAudio',
-                    'preferredcodec': 'mp3',
-                    'preferredquality': '192',
-                }]
-                ydl_opts['keepvideo'] = False
+                # Remove built-in postprocessor to avoid conflicts
+                ydl_opts['postprocessors'] = []
+                ydl_opts['keepvideo'] = False  # Don't delete original - we'll handle it
+                
+                # Add custom progress hook for audio extraction
+                original_hook = self.progress_hook
+                def audio_progress_hook(d):
+                    if d['status'] == 'finished':
+                        # Start real audio extraction progress
+                        self.queue.put(("status", "Начало конвертации аудио..."))
+                        self.queue.put(("log", "Начало конвертации в MP3..."))
+                        
+                        # Get the downloaded file path
+                        filepath = d.get('filename', '')
+                        if filepath:
+                            output_file = os.path.splitext(filepath)[0] + '.mp3'
+                            self.extract_audio_with_progress(filepath, output_file)
+                    
+                    original_hook(d)
+                
+                ydl_opts['progress_hooks'] = [audio_progress_hook]
             else:
                 ydl_opts['postprocessors'] = [{
                     'key': 'FFmpegVideoConvertor',
@@ -242,19 +259,97 @@ class YouTubeDownloaderGUI:
         finally:
             self.queue.put(("finished", None))
     
+    def extract_audio_with_progress(self, input_file, output_file):
+        """Extract audio with real progress tracking using FFmpeg"""
+        try:
+            # FFmpeg command for audio extraction
+            cmd = [
+                'ffmpeg', '-i', input_file,
+                '-vn', '-acodec', 'mp3', '-ab', '192k',
+                '-y', output_file
+            ]
+            
+            # Start FFmpeg process
+            process = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                universal_newlines=True,
+                bufsize=1
+            )
+            
+            total_duration = None
+            
+            # Read FFmpeg output line by line
+            for line in iter(process.stdout.readline, ''):
+                if not line:
+                    break
+                
+                # Parse duration from FFmpeg output
+                duration_match = re.search(r'Duration: (\d{2}):(\d{2}):(\d{2}\.\d{2})', line)
+                if duration_match and total_duration is None:
+                    hours, minutes, seconds = duration_match.groups()
+                    total_duration = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
+                    continue
+                
+                # Parse current time from FFmpeg output
+                time_match = re.search(r'time=(\d{2}):(\d{2}):(\d{2}\.\d{2})', line)
+                if time_match and total_duration:
+                    hours, minutes, seconds = time_match.groups()
+                    current_time = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
+                    
+                    # Calculate progress percentage
+                    progress = (current_time / total_duration) * 100
+                    self.queue.put(("progress", progress))
+                    self.queue.put(("status", f"Конвертация в MP3... {progress:.1f}%"))
+                    self.queue.put(("log", f"Конвертация аудио: {progress:.1f}%"))
+            
+            # Wait for process to complete
+            process.wait()
+            
+            if process.returncode == 0:
+                self.queue.put(("progress", 100))
+                self.queue.put(("log", f"Конвертация завершена: {os.path.basename(output_file)}"))
+                # Remove original file
+                try:
+                    os.remove(input_file)
+                except:
+                    pass
+            else:
+                self.queue.put(("error", "Ошибка конвертации аудио"))
+                
+        except Exception as e:
+            self.queue.put(("error", f"Ошибка конвертации: {str(e)}"))
+    
     def progress_hook(self, d):
         """Progress hook for yt-dlp"""
         if d['status'] == 'downloading':
-            percent_str = d.get('_percent_str', '0.0%')
-            try:
-                percent = float(percent_str.strip('%'))
+            # Get download progress
+            total_bytes = d.get('total_bytes') or d.get('total_bytes_estimate', 0)
+            downloaded_bytes = d.get('downloaded_bytes', 0)
+            
+            if total_bytes > 0:
+                percent = (downloaded_bytes / total_bytes) * 100
                 self.queue.put(("progress", percent))
-                self.queue.put(("status", f"Скачивание... {percent_str}"))
-                self.queue.put(("log", f"Скачивание: {d.get('filename', 'Unknown')} - {percent_str}"))
-            except ValueError:
-                pass
+                self.queue.put(("status", f"Скачивание... {percent:.1f}%"))
+                self.queue.put(("log", f"Скачивание: {d.get('filename', 'Unknown')} - {percent:.1f}%"))
+            else:
+                # Fallback to percentage string if available
+                percent_str = d.get('_percent_str', '0.0%')
+                try:
+                    percent = float(percent_str.strip('%'))
+                    self.queue.put(("progress", percent))
+                    self.queue.put(("status", f"Скачивание... {percent_str}"))
+                    self.queue.put(("log", f"Скачивание: {d.get('filename', 'Unknown')} - {percent_str}"))
+                except ValueError:
+                    self.queue.put(("status", "Скачивание..."))
+                    self.queue.put(("log", f"Скачивание: {d.get('filename', 'Unknown')}"))
+                    
         elif d['status'] == 'finished':
             self.queue.put(("log", f"Завершено: {d.get('filename', 'Unknown')}"))
+            
+        elif d['status'] == 'error':
+            self.queue.put(("error", f"Ошибка скачивания: {d.get('filename', 'Unknown')}"))
     
     def check_queue(self):
         """Check queue for messages from worker thread"""
