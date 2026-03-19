@@ -10,6 +10,7 @@ import threading
 import os
 from pathlib import Path
 import queue
+import json
 
 class YouTubeDownloaderGUI:
     def __init__(self, root):
@@ -18,11 +19,17 @@ class YouTubeDownloaderGUI:
         self.root.geometry("800x600")
         self.root.resizable(True, True)
         
+        # Settings file
+        self.settings_file = "settings.json"
+        
+        # Load settings
+        self.settings = self.load_settings()
+        
         # Variables
         self.url_var = tk.StringVar()
-        self.quality_var = tk.StringVar(value="best")
-        self.output_dir_var = tk.StringVar(value="downloads")
-        self.download_type_var = tk.StringVar(value="video")
+        self.quality_var = tk.StringVar(value=self.settings.get('quality', 'best'))
+        self.output_dir_var = tk.StringVar(value=self.settings.get('output_dir', 'downloads'))
+        self.download_type_var = tk.StringVar(value=self.settings.get('download_type', 'video'))
         self.progress_var = tk.DoubleVar()
         self.status_var = tk.StringVar(value="Готов к работе")
         
@@ -34,6 +41,37 @@ class YouTubeDownloaderGUI:
         
         # Start queue checker
         self.root.after(100, self.check_queue)
+        
+        # Save settings on exit
+        self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
+    
+    def load_settings(self):
+        """Load settings from file"""
+        try:
+            if os.path.exists(self.settings_file):
+                with open(self.settings_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+        except Exception:
+            pass
+        return {}
+    
+    def save_settings(self):
+        """Save current settings to file"""
+        try:
+            settings = {
+                'quality': self.quality_var.get(),
+                'output_dir': self.output_dir_var.get(),
+                'download_type': self.download_type_var.get()
+            }
+            with open(self.settings_file, 'w', encoding='utf-8') as f:
+                json.dump(settings, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+    
+    def on_closing(self):
+        """Handle window closing"""
+        self.save_settings()
+        self.root.destroy()
     
     def create_widgets(self):
         """Create all GUI widgets"""
@@ -49,8 +87,11 @@ class YouTubeDownloaderGUI:
         
         # URL Input
         ttk.Label(main_frame, text="URL видео:").grid(row=0, column=0, sticky=tk.W, pady=5)
-        url_entry = ttk.Entry(main_frame, textvariable=self.url_var, width=60)
+        url_entry = ttk.Entry(main_frame, textvariable=self.url_var, width=60, font=('Arial', 10))
         url_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
+        
+        # Set focus to URL entry
+        url_entry.focus_set()
         
         # Download Type
         ttk.Label(main_frame, text="Тип загрузки:").grid(row=1, column=0, sticky=tk.W, pady=5)
