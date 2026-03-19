@@ -1,0 +1,497 @@
+2026-03-19 18:19:25,030 - INFO - === YouTube Downlogger Started ===
+2026-03-19 18:19:34,983 - INFO - Starting download for URL: https://www.youtube.com/shorts/Q9ON9mqi29U
+2026-03-19 18:19:34,984 - INFO - Download type: video, quality: 360p, audio_quality: низкое
+2026-03-19 18:19:34,984 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:19:34,984 - INFO - Starting yt-dlp download...
+2026-03-19 18:19:36,389 - ERROR - Error in download worker
+2026-03-19 18:19:36,389 - ERROR - Exception: [0;31mERROR:[0m [youtube] Q9ON9mqi29U: Requested format is not available. Use --list-formats for a list of available formats
+2026-03-19 18:19:36,392 - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1698, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1854, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1913, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3058, in process_video_result
+    raise ExtractorError(
+        'Requested format is not available. Use --list-formats for a list of available formats',
+        expected=True, video_id=info_dict['id'], ie=info_dict['extractor'])
+yt_dlp.utils.ExtractorError: [youtube] Q9ON9mqi29U: Requested format is not available. Use --list-formats for a list of available formats
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Git_Hub_Repositories\youtube_download\gui_downloader.py", line 327, in download_worker
+    ydl.download([url])
+    ~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3670, in download
+    self.__download_wrapper(self.extract_info)(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        url, force_generic_extractor=self.params.get('force_generic_extractor', False))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3643, in wrapper
+    res = func(*args, **kwargs)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1687, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1716, in wrapper
+    self.report_error(str(e), e.format_traceback())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] Q9ON9mqi29U: Requested format is not available. Use --list-formats for a list of available formats
+
+2026-03-19 18:21:19,993 - INFO - === YouTube Downlogger Started ===
+2026-03-19 18:21:25,928 - INFO - Starting download for URL: https://www.youtube.com/shorts/Q9ON9mqi29U
+2026-03-19 18:21:25,930 - INFO - Download type: video, quality: 360p, audio_quality: низкое
+2026-03-19 18:21:25,930 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:21:25,931 - INFO - Video quality mode: 360p, format: best[height<=360]/best[height<=480]/best[height<=720]/best
+2026-03-19 18:21:25,931 - INFO - Starting yt-dlp download...
+2026-03-19 18:21:28,674 - INFO - Download completed successfully
+2026-03-19 18:21:52,032 - INFO - Starting download for URL: https://www.youtube.com/shorts/Q9ON9mqi29U
+2026-03-19 18:21:52,032 - INFO - Download type: video, quality: 1080p, audio_quality: низкое
+2026-03-19 18:21:52,033 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:21:52,033 - INFO - Video quality mode: 1080p, format: best[height<=1080]/best
+2026-03-19 18:21:52,033 - INFO - Starting yt-dlp download...
+2026-03-19 18:21:53,953 - INFO - Download completed successfully
+2026-03-19 18:22:12,265 - INFO - Starting download for URL: https://www.youtube.com/shorts/Q9ON9mqi29U
+2026-03-19 18:22:12,267 - INFO - Download type: audio, quality: 1080p, audio_quality: низкое
+2026-03-19 18:22:12,268 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:22:12,268 - INFO - Audio quality mode: низкое, format: bestaudio[abr<=128]/bestaudio
+2026-03-19 18:22:12,269 - INFO - Starting yt-dlp download...
+2026-03-19 18:22:13,808 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,810 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,815 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,818 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,820 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,853 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,890 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,934 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,975 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,978 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:13,979 - DEBUG - Progress hook status: finished
+2026-03-19 18:22:13,979 - INFO - Downloaded file: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm
+2026-03-19 18:22:13,979 - INFO - Target MP3 file: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3
+2026-03-19 18:22:13,979 - INFO - Starting audio extraction: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm -> D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3
+2026-03-19 18:22:13,980 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm -vn -acodec mp3 -ab 128k -y D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3
+2026-03-19 18:22:14,009 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-19 18:22:14,010 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-19 18:22:14,010 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-19 18:22:14,011 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-19 18:22:14,012 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-19 18:22:14,012 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-19 18:22:14,013 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-19 18:22:14,013 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-19 18:22:14,013 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-19 18:22:14,014 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-19 18:22:14,020 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm':
+2026-03-19 18:22:14,020 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-19 18:22:14,020 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-19 18:22:14,023 - DEBUG - FFmpeg output 14: Duration: 00:00:35.76, start: 0.000000, bitrate: 123 kb/s
+2026-03-19 18:22:14,024 - INFO - Total duration: 35.76 seconds
+2026-03-19 18:22:14,025 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-19 18:22:14,026 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-19 18:22:14,027 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-19 18:22:14,028 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-19 18:22:14,032 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3':
+2026-03-19 18:22:14,032 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-19 18:22:14,033 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-19 18:22:14,034 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s (default)
+2026-03-19 18:22:14,034 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-19 18:22:14,035 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-19 18:22:14,436 - DEBUG - FFmpeg output 25: [out#0/mp3 @ 000002998e6cd380] video:0KiB audio:559KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.074979%
+2026-03-19 18:22:14,437 - DEBUG - FFmpeg output 26: size=     559KiB time=00:00:35.73 bitrate= 128.2kbits/s speed=  86x elapsed=0:00:00.41
+2026-03-19 18:22:14,437 - DEBUG - Progress: 99.9% (time: 35.73/35.76)
+2026-03-19 18:22:14,440 - INFO - FFmpeg process finished with return code: 0
+2026-03-19 18:22:14,441 - INFO - Removed original file: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm
+2026-03-19 18:22:14,464 - INFO - Download completed successfully
+2026-03-19 18:22:50,098 - INFO - Starting download for URL: https://www.youtube.com/shorts/Q9ON9mqi29U
+2026-03-19 18:22:50,099 - INFO - Download type: audio, quality: 1080p, audio_quality: высокое
+2026-03-19 18:22:50,100 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:22:50,100 - INFO - Audio quality mode: высокое, format: bestaudio[abr<=320]/bestaudio
+2026-03-19 18:22:50,101 - INFO - Starting yt-dlp download...
+2026-03-19 18:22:51,573 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,574 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,575 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,575 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,577 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,611 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,633 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,692 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,713 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,716 - DEBUG - Progress hook status: downloading
+2026-03-19 18:22:51,717 - DEBUG - Progress hook status: finished
+2026-03-19 18:22:51,717 - INFO - Downloaded file: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm
+2026-03-19 18:22:51,717 - INFO - Target MP3 file: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3
+2026-03-19 18:22:51,718 - INFO - Starting audio extraction: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm -> D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3
+2026-03-19 18:22:51,718 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm -vn -acodec mp3 -ab 320k -y D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3
+2026-03-19 18:22:51,745 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-19 18:22:51,745 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-19 18:22:51,747 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-19 18:22:51,748 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-19 18:22:51,749 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-19 18:22:51,750 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-19 18:22:51,750 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-19 18:22:51,751 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-19 18:22:51,751 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-19 18:22:51,752 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-19 18:22:51,754 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm':
+2026-03-19 18:22:51,754 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-19 18:22:51,755 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-19 18:22:51,756 - DEBUG - FFmpeg output 14: Duration: 00:00:35.76, start: 0.000000, bitrate: 123 kb/s
+2026-03-19 18:22:51,756 - INFO - Total duration: 35.76 seconds
+2026-03-19 18:22:51,757 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-19 18:22:51,757 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-19 18:22:51,758 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-19 18:22:51,758 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-19 18:22:51,764 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.mp3':
+2026-03-19 18:22:51,764 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-19 18:22:51,764 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-19 18:22:51,764 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 320 kb/s (default)
+2026-03-19 18:22:51,765 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-19 18:22:51,765 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-19 18:22:52,185 - DEBUG - FFmpeg output 25: [out#0/mp3 @ 000002377195d380] video:0KiB audio:1397KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.070260%
+2026-03-19 18:22:52,185 - DEBUG - FFmpeg output 26: size=    1398KiB time=00:00:35.73 bitrate= 320.4kbits/s speed=83.2x elapsed=0:00:00.42
+2026-03-19 18:22:52,186 - DEBUG - Progress: 99.9% (time: 35.73/35.76)
+2026-03-19 18:22:52,189 - INFO - FFmpeg process finished with return code: 0
+2026-03-19 18:22:52,189 - INFO - Removed original file: D:\Downloads\audio\ЛУЧШИЕ БОИ В TOPDOG #hustleshow #регбист #тамби #адамзуба.webm
+2026-03-19 18:22:52,216 - INFO - Download completed successfully
+2026-03-19 18:23:27,913 - INFO - === YouTube Downlogger Started ===
+2026-03-19 18:23:43,904 - INFO - Starting download for URL: https://www.youtube.com/watch?v=R2aTPWRTTR4&t=3616s
+2026-03-19 18:23:43,906 - INFO - Download type: audio, quality: 720p, audio_quality: среднее
+2026-03-19 18:23:43,906 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:23:43,906 - INFO - Audio quality mode: среднее, format: bestaudio[abr<=192]/bestaudio
+2026-03-19 18:23:43,906 - INFO - Starting yt-dlp download...
+2026-03-19 18:23:45,768 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,769 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,770 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,770 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,774 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,810 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,836 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,877 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,915 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:45,968 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,061 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,248 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,646 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,824 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,971 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,972 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,974 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,974 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:46,977 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,012 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,046 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,085 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,124 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,173 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,266 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,491 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,842 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:47,993 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,135 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,136 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,136 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,137 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,141 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,181 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,204 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,251 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,300 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,410 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,456 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:48,645 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,019 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,193 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,344 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,344 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,345 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,346 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,357 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,387 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,412 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,470 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,504 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,555 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,649 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:49,895 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,245 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,420 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,616 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,616 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,617 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,618 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,621 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,656 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,682 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,722 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,761 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,814 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:50,959 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,099 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,472 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,702 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,852 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,853 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,854 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,854 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,859 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,893 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,920 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,961 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:51,999 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:52,051 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:52,145 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:52,364 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:52,934 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,118 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,260 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,261 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,262 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,263 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,268 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,301 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,327 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,368 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,416 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,529 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,597 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:53,928 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,338 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,569 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,728 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,728 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,729 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,730 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,733 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,784 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,808 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,860 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,899 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:54,953 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,047 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,239 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,618 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,769 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,968 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,968 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,969 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,970 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:55,974 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,007 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,033 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,071 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,114 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,195 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,259 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,451 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,609 - DEBUG - Progress hook status: downloading
+2026-03-19 18:23:56,610 - DEBUG - Progress hook status: finished
+2026-03-19 18:23:56,611 - INFO - Downloaded file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm
+2026-03-19 18:23:56,611 - INFO - Target MP3 file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3
+2026-03-19 18:23:56,611 - INFO - Starting audio extraction: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm -> D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3
+2026-03-19 18:23:56,612 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm -vn -acodec mp3 -ab 192k -y D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3
+2026-03-19 18:23:56,647 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-19 18:23:56,648 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-19 18:23:56,649 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-19 18:23:56,649 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-19 18:23:56,650 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-19 18:23:56,650 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-19 18:23:56,650 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-19 18:23:56,651 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-19 18:23:56,651 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-19 18:23:56,651 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-19 18:23:56,656 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm':
+2026-03-19 18:23:56,656 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-19 18:23:56,656 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-19 18:23:56,657 - DEBUG - FFmpeg output 14: Duration: 01:45:30.28, start: 0.000000, bitrate: 110 kb/s
+2026-03-19 18:23:56,657 - INFO - Total duration: 6330.28 seconds
+2026-03-19 18:23:56,658 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-19 18:23:56,658 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-19 18:23:56,660 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-19 18:23:56,660 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-19 18:23:56,663 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3':
+2026-03-19 18:23:56,664 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-19 18:23:56,664 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-19 18:23:56,664 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 192 kb/s (default)
+2026-03-19 18:23:56,665 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-19 18:23:56,665 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-19 18:25:22,994 - DEBUG - FFmpeg output 25: size=     768KiB time=00:00:42.36 bitrate= 148.5kbits/s speed=80.5x elapsed=0:00:00.52    size=    1792KiB time=00:01:20.88 bitrate= 181.5kbits/s speed=77.9x elapsed=0:00:01.03    size=    2560KiB time=00:01:58.05 bitrate= 177.6kbits/s speed=76.3x elapsed=0:00:01.54    size=    3584KiB time=00:02:37.41 bitrate= 186.5kbits/s speed=76.4x elapsed=0:00:02.05    size=    4608KiB time=00:03:17.40 bitrate= 191.2kbits/s speed=76.2x elapsed=0:00:02.58    size=    5376KiB time=00:03:56.20 bitrate= 186.4kbits/s speed=76.2x elapsed=0:00:03.09    size=    6400KiB time=00:04:35.78 bitrate= 190.1kbits/s speed=76.3x elapsed=0:00:03.61    size=    7168KiB time=00:05:15.16 bitrate= 186.3kbits/s speed=76.5x elapsed=0:00:04.12    size=    8192KiB time=00:05:55.70 bitrate= 188.7kbits/s speed=76.5x elapsed=0:00:04.65    size=    9216KiB time=00:06:35.73 bitrate= 190.8kbits/s speed=76.6x elapsed=0:00:05.16    size=    9984KiB time=00:07:14.97 bitrate= 188.0kbits/s speed=76.6x elapsed=0:00:05.67    size=   11008KiB time=00:07:53.97 bitrate= 190.3kbits/s speed=76.5x elapsed=0:00:06.19    size=   11776KiB time=00:08:33.31 bitrate= 187.9kbits/s speed=76.6x elapsed=0:00:06.70    size=   12800KiB time=00:09:12.43 bitrate= 189.8kbits/s speed=76.5x elapsed=0:00:07.22    size=   13824KiB time=00:09:50.18 bitrate= 191.9kbits/s speed=76.3x elapsed=0:00:07.73    size=   14592KiB time=00:10:26.49 bitrate= 190.8kbits/s speed=75.9x elapsed=0:00:08.25    size=   15360KiB time=00:11:03.26 bitrate= 189.7kbits/s speed=75.6x elapsed=0:00:08.77    size=   16384KiB time=00:11:40.08 bitrate= 191.7kbits/s speed=75.4x elapsed=0:00:09.28    size=   17152KiB time=00:12:16.68 bitrate= 190.7kbits/s speed=75.2x elapsed=0:00:09.79    size=   17920KiB time=00:12:54.33 bitrate= 189.6kbits/s speed=75.1x elapsed=0:00:10.31    size=   18944KiB time=00:13:32.68 bitrate= 191.0kbits/s speed=  75x elapsed=0:00:10.82    size=   19968KiB time=00:14:12.28 bitrate= 191.9kbits/s speed=75.1x elapsed=0:00:11.34    size=   20736KiB time=00:14:49.96 bitrate= 190.9kbits/s speed=75.1x elapsed=0:00:11.85    size=   21760KiB time=00:15:30.12 bitrate= 191.7kbits/s speed=75.1x elapsed=0:00:12.38    size=   22528KiB time=00:16:08.35 bitrate= 190.6kbits/s speed=75.1x elapsed=0:00:12.89    size=   23552KiB time=00:16:47.52 bitrate= 191.5kbits/s speed=75.2x elapsed=0:00:13.40    size=   24320KiB time=00:17:27.67 bitrate= 190.2kbits/s speed=75.2x elapsed=0:00:13.93    size=   25344KiB time=00:18:07.27 bitrate= 191.0kbits/s speed=75.3x elapsed=0:00:14.44    size=   26368KiB time=00:18:46.56 bitrate= 191.7kbits/s speed=75.3x elapsed=0:00:14.95    size=   27136KiB time=00:19:26.56 bitrate= 190.6kbits/s speed=75.4x elapsed=0:00:15.47    size=   28160KiB time=00:20:05.73 bitrate= 191.3kbits/s speed=75.4x elapsed=0:00:15.98    size=   28928KiB time=00:20:44.80 bitrate= 190.4kbits/s speed=75.5x elapsed=0:00:16.49    size=   29952KiB time=00:21:22.53 bitrate= 191.3kbits/s speed=75.4x elapsed=0:00:17.01    size=   30720KiB time=00:21:59.37 bitrate= 190.7kbits/s speed=75.3x elapsed=0:00:17.52    size=   31744KiB time=00:22:37.05 bitrate= 191.6kbits/s speed=75.2x elapsed=0:00:18.04    size=   32768KiB time=00:23:19.68 bitrate= 191.8kbits/s speed=75.4x elapsed=0:00:18.56    size=   33536KiB time=00:24:01.75 bitrate= 190.6kbits/s speed=75.6x elapsed=0:00:19.08    size=   34816KiB time=00:24:45.88 bitrate= 191.9kbits/s speed=75.8x elapsed=0:00:19.59    size=   35584KiB time=00:25:25.34 bitrate= 191.1kbits/s speed=75.9x elapsed=0:00:20.10    size=   36608KiB time=00:26:05.01 bitrate= 191.6kbits/s speed=75.9x elapsed=0:00:20.62    size=   37376KiB time=00:26:43.94 bitrate= 190.9kbits/s speed=75.8x elapsed=0:00:21.15    size=   38400KiB time=00:27:21.93 bitrate= 191.6kbits/s speed=75.8x elapsed=0:00:21.66    size=   39168KiB time=00:27:58.70 bitrate= 191.1kbits/s speed=75.7x elapsed=0:00:22.18    size=   40192KiB time=00:28:37.10 bitrate= 191.7kbits/s speed=75.7x elapsed=0:00:22.69    size=   40960KiB time=00:29:11.28 bitrate= 191.6kbits/s speed=75.5x elapsed=0:00:23.20    size=   41728KiB time=00:29:50.49 bitrate= 190.9kbits/s speed=75.5x elapsed=0:00:23.72    size=   42752KiB time=00:30:25.72 bitrate= 191.8kbits/s speed=75.3x elapsed=0:00:24.24    size=   43520KiB time=00:31:05.64 bitrate= 191.1kbits/s speed=75.4x elapsed=0:00:24.75    size=   44544KiB time=00:31:44.85 bitrate= 191.6kbits/s speed=75.4x elapsed=0:00:25.27    size=   45312KiB time=00:32:23.25 bitrate= 191.0kbits/s speed=75.4x elapsed=0:00:25.78    size=   46336KiB time=00:33:00.38 bitrate= 191.7kbits/s speed=75.3x elapsed=0:00:26.29    size=   47104KiB time=00:33:38.52 bitrate= 191.2kbits/s speed=75.3x elapsed=0:00:26.82    size=   48128KiB time=00:34:15.98 bitrate= 191.8kbits/s speed=75.2x elapsed=0:00:27.33    size=   48896KiB time=00:34:52.87 bitrate= 191.4kbits/s speed=75.2x elapsed=0:00:27.84    size=   49920KiB time=00:35:30.14 bitrate= 192.0kbits/s speed=75.1x elapsed=0:00:28.36    size=   50688KiB time=00:36:07.34 bitrate= 191.6kbits/s speed=75.1x elapsed=0:00:28.87    size=   51712KiB time=00:36:47.08 bitrate= 191.9kbits/s speed=75.1x elapsed=0:00:29.40    size=   52480KiB time=00:37:26.56 bitrate= 191.4kbits/s speed=75.1x elapsed=0:00:29.91    size=   53504KiB time=00:38:05.52 bitrate= 191.8kbits/s speed=75.1x elapsed=0:00:30.42    size=   54272KiB time=00:38:44.73 bitrate= 191.2kbits/s speed=75.1x elapsed=0:00:30.94    size=   55296KiB time=00:39:23.64 bitrate= 191.6kbits/s speed=75.1x elapsed=0:00:31.45    size=   56064KiB time=00:40:02.32 bitrate= 191.2kbits/s speed=75.1x elapsed=0:00:31.97    size=   57088KiB time=00:40:41.08 bitrate= 191.6kbits/s speed=75.1x elapsed=0:00:32.48    size=   57856KiB time=00:41:19.22 bitrate= 191.2kbits/s speed=75.1x elapsed=0:00:32.99    size=   58880KiB time=00:41:57.00 bitrate= 191.6kbits/s speed=75.1x elapsed=0:00:33.51    size=   59648KiB time=00:42:34.24 bitrate= 191.3kbits/s speed=  75x elapsed=0:00:34.03    size=   60672KiB time=00:43:10.65 bitrate= 191.9kbits/s speed=  75x elapsed=0:00:34.55    size=   61440KiB time=00:43:47.83 bitrate= 191.5kbits/s speed=74.9x elapsed=0:00:35.06    size=   62208KiB time=00:44:24.84 bitrate= 191.2kbits/s speed=74.9x elapsed=0:00:35.57    size=   63232KiB time=00:45:02.40 bitrate= 191.7kbits/s speed=74.8x elapsed=0:00:36.10    size=   64000KiB time=00:45:40.12 bitrate= 191.3kbits/s speed=74.8x elapsed=0:00:36.61    size=   65024KiB time=00:46:16.94 bitrate= 191.8kbits/s speed=74.8x elapsed=0:00:37.12    size=   65792KiB time=00:46:55.46 bitrate= 191.4kbits/s speed=74.8x elapsed=0:00:37.64    size=   66816KiB time=00:47:34.05 bitrate= 191.8kbits/s speed=74.8x elapsed=0:00:38.15    size=   67584KiB time=00:48:14.04 bitrate= 191.3kbits/s speed=74.8x elapsed=0:00:38.68    size=   68608KiB time=00:48:53.11 bitrate= 191.6kbits/s speed=74.8x elapsed=0:00:39.19    size=   69632KiB time=00:49:32.56 bitrate= 191.9kbits/s speed=74.9x elapsed=0:00:39.70    size=   70400KiB time=00:50:11.32 bitrate= 191.5kbits/s speed=74.9x elapsed=0:00:40.22    size=   71424KiB time=00:50:50.25 bitrate= 191.8kbits/s speed=74.9x elapsed=0:00:40.73    size=   72192KiB time=00:51:26.80 bitrate= 191.6kbits/s speed=74.8x elapsed=0:00:41.24    size=   73216KiB time=00:52:04.10 bitrate= 192.0kbits/s speed=74.8x elapsed=0:00:41.77    size=   73984KiB time=00:52:40.34 bitrate= 191.8kbits/s speed=74.7x elapsed=0:00:42.28    size=   74752KiB time=00:53:16.80 bitrate= 191.6kbits/s speed=74.7x elapsed=0:00:42.80    size=   75776KiB time=00:53:53.16 bitrate= 192.0kbits/s speed=74.6x elapsed=0:00:43.31    size=   76544KiB time=00:54:30.96 bitrate= 191.7kbits/s speed=74.6x elapsed=0:00:43.82    size=   77312KiB time=00:55:05.44 bitrate= 191.6kbits/s speed=74.5x elapsed=0:00:44.34    size=   78336KiB time=00:55:43.72 bitrate= 191.9kbits/s speed=74.5x elapsed=0:00:44.85    size=   79104KiB time=00:56:21.45 bitrate= 191.6kbits/s speed=74.5x elapsed=0:00:45.37    size=   80128KiB time=00:57:00.50 bitrate= 191.9kbits/s speed=74.5x elapsed=0:00:45.90    size=   80896KiB time=00:57:37.05 bitrate= 191.7kbits/s speed=74.5x elapsed=0:00:46.41    size=   81664KiB time=00:58:12.33 bitrate= 191.6kbits/s speed=74.4x elapsed=0:00:46.92    size=   82432KiB time=00:58:47.18 bitrate= 191.5kbits/s speed=74.4x elapsed=0:00:47.43    size=   83456KiB time=00:59:22.89 bitrate= 191.9kbits/s speed=74.3x elapsed=0:00:47.94    size=   84224KiB time=00:59:59.08 bitrate= 191.7kbits/s speed=74.2x elapsed=0:00:48.47    size=   84992KiB time=01:00:35.01 bitrate= 191.5kbits/s speed=74.2x elapsed=0:00:48.98    size=   86016KiB time=01:01:11.56 bitrate= 191.9kbits/s speed=74.2x elapsed=0:00:49.50    size=   86784KiB time=01:01:49.32 bitrate= 191.7kbits/s speed=74.2x elapsed=0:00:50.01    size=   87808KiB time=01:02:27.81 bitrate= 191.9kbits/s speed=74.2x elapsed=0:00:50.53    size=   88576KiB time=01:03:06.55 bitrate= 191.6kbits/s speed=74.2x elapsed=0:00:51.04    size=   89600KiB time=01:03:45.64 bitrate= 191.9kbits/s speed=74.2x elapsed=0:00:51.57    size=   90368KiB time=01:04:24.98 bitrate= 191.5kbits/s speed=74.2x elapsed=0:00:52.10    size=   91392KiB time=01:05:02.73 bitrate= 191.8kbits/s speed=74.2x elapsed=0:00:52.61    size=   92160KiB time=01:05:40.84 bitrate= 191.6kbits/s speed=74.2x elapsed=0:00:53.12    size=   93184KiB time=01:06:18.81 bitrate= 191.9kbits/s speed=74.2x elapsed=0:00:53.63    size=   94208KiB time=01:07:00.74 bitrate= 191.9kbits/s speed=74.2x elapsed=0:00:54.16    size=   95232KiB time=01:07:43.48 bitrate= 192.0kbits/s speed=74.3x elapsed=0:00:54.69    size=   96000KiB time=01:08:24.62 bitrate= 191.6kbits/s speed=74.3x elapsed=0:00:55.20    size=   97024KiB time=01:09:01.82 bitrate= 191.9kbits/s speed=74.3x elapsed=0:00:55.72    size=   97792KiB time=01:09:39.69 bitrate= 191.7kbits/s speed=74.3x elapsed=0:00:56.23    size=   98560KiB time=01:10:14.20 bitrate= 191.6kbits/s speed=74.3x elapsed=0:00:56.74    size=   99328KiB time=01:10:41.90 bitrate= 191.8kbits/s speed=74.1x elapsed=0:00:57.26    size=  100096KiB time=01:11:15.12 bitrate= 191.8kbits/s speed=  74x elapsed=0:00:57.77    size=  100864KiB time=01:11:51.19 bitrate= 191.7kbits/s speed=73.9x elapsed=0:00:58.30    size=  101632KiB time=01:12:25.96 bitrate= 191.6kbits/s speed=73.9x elapsed=0:00:58.80    size=  102656KiB time=01:13:01.29 bitrate= 191.9kbits/s speed=73.8x elapsed=0:00:59.32    size=  103424KiB time=01:13:40.17 bitrate= 191.7kbits/s speed=73.8x elapsed=0:00:59.85    size=  104448KiB time=01:14:18.36 bitrate= 191.9kbits/s speed=73.9x elapsed=0:01:00.36    size=  105216KiB time=01:14:57.60 bitrate= 191.6kbits/s speed=73.9x elapsed=0:01:00.87    size=  106240KiB time=01:15:34.84 bitrate= 191.9kbits/s speed=73.9x elapsed=0:01:01.39    size=  107008KiB time=01:16:13.82 bitrate= 191.7kbits/s speed=73.9x elapsed=0:01:01.90    size=  108032KiB time=01:16:51.81 bitrate= 191.9kbits/s speed=73.9x elapsed=0:01:02.41    size=  108800KiB time=01:17:30.69 bitrate= 191.6kbits/s speed=73.9x elapsed=0:01:02.94    size=  109824KiB time=01:18:06.74 bitrate= 192.0kbits/s speed=73.9x elapsed=0:01:03.45    size=  110592KiB time=01:18:42.96 bitrate= 191.8kbits/s speed=73.8x elapsed=0:01:03.97    size=  111360KiB time=01:19:21.88 bitrate= 191.6kbits/s speed=73.8x elapsed=0:01:04.49    size=  112384KiB time=01:20:00.24 bitrate= 191.8kbits/s speed=73.8x elapsed=0:01:05.01    size=  113152KiB time=01:20:37.63 bitrate= 191.6kbits/s speed=73.8x elapsed=0:01:05.51    size=  114176KiB time=01:21:15.60 bitrate= 191.8kbits/s speed=73.8x elapsed=0:01:06.04    size=  114944KiB time=01:21:51.55 bitrate= 191.7kbits/s speed=73.8x elapsed=0:01:06.55    size=  115712KiB time=01:22:26.90 bitrate= 191.6kbits/s speed=73.8x elapsed=0:01:07.06    size=  116736KiB time=01:23:02.73 bitrate= 191.9kbits/s speed=73.7x elapsed=0:01:07.57    size=  117504KiB time=01:23:39.57 bitrate= 191.8kbits/s speed=73.7x elapsed=0:01:08.10    size=  118272KiB time=01:24:16.36 bitrate= 191.6kbits/s speed=73.7x elapsed=0:01:08.61    size=  119296KiB time=01:24:53.83 bitrate= 191.9kbits/s speed=73.7x elapsed=0:01:09.12    size=  120064KiB time=01:25:29.80 bitrate= 191.7kbits/s speed=73.7x elapsed=0:01:09.63    size=  121088KiB time=01:26:07.53 bitrate= 192.0kbits/s speed=73.7x elapsed=0:01:10.16    size=  121856KiB time=01:26:45.57 bitrate= 191.8kbits/s speed=73.7x elapsed=0:01:10.67    size=  122624KiB time=01:27:21.24 bitrate= 191.7kbits/s speed=73.6x elapsed=0:01:11.19    size=  123648KiB time=01:28:00.04 bitrate= 191.8kbits/s speed=73.6x elapsed=0:01:11.70    size=  124416KiB time=01:28:36.84 bitrate= 191.7kbits/s speed=73.6x elapsed=0:01:12.21    size=  125440KiB time=01:29:14.49 bitrate= 191.9kbits/s speed=73.6x elapsed=0:01:12.74    size=  126208KiB time=01:29:51.60 bitrate= 191.8kbits/s speed=73.6x elapsed=0:01:13.25    size=  126976KiB time=01:30:24.79 bitrate= 191.7kbits/s speed=73.5x elapsed=0:01:13.77    size=  127744KiB time=01:31:00.79 bitrate= 191.6kbits/s speed=73.5x elapsed=0:01:14.28    size=  128768KiB time=01:31:39.28 bitrate= 191.8kbits/s speed=73.5x elapsed=0:01:14.79    size=  129792KiB time=01:32:17.97 bitrate= 192.0kbits/s speed=73.5x elapsed=0:01:15.31    size=  130560KiB time=01:32:56.23 bitrate= 191.8kbits/s speed=73.5x elapsed=0:01:15.82    size=  131584KiB time=01:33:35.56 bitrate= 192.0kbits/s speed=73.6x elapsed=0:01:16.34    size=  132352KiB time=01:34:14.73 bitrate= 191.7kbits/s speed=73.6x elapsed=0:01:16.85    size=  133376KiB time=01:34:53.61 bitrate= 191.9kbits/s speed=73.6x elapsed=0:01:17.37    size=  134144KiB time=01:35:31.72 bitrate= 191.7kbits/s speed=73.6x elapsed=0:01:17.89    size=  135168KiB time=01:36:08.47 bitrate= 192.0kbits/s speed=73.6x elapsed=0:01:18.41    size=  135936KiB time=01:36:45.40 bitrate= 191.8kbits/s speed=73.6x elapsed=0:01:18.92    size=  136704KiB time=01:37:23.13 bitrate= 191.7kbits/s speed=73.6x elapsed=0:01:19.44    size=  137728KiB time=01:38:01.96 bitrate= 191.8kbits/s speed=73.6x elapsed=0:01:19.95    size=  138752KiB time=01:38:41.28 bitrate= 192.0kbits/s speed=73.6x elapsed=0:01:20.47    size=  139520KiB time=01:39:20.59 bitrate= 191.8kbits/s speed=73.6x elapsed=0:01:20.98    size=  140544KiB time=01:39:57.86 bitrate= 192.0kbits/s speed=73.6x elapsed=0:01:21.50    size=  141312KiB time=01:40:34.75 bitrate= 191.8kbits/s speed=73.6x elapsed=0:01:22.01    size=  142080KiB time=01:41:10.87 bitrate= 191.7kbits/s speed=73.6x elapsed=0:01:22.53    size=  143104KiB time=01:41:47.32 bitrate= 192.0kbits/s speed=73.5x elapsed=0:01:23.05    size=  143872KiB time=01:42:23.37 bitrate= 191.8kbits/s speed=73.5x elapsed=0:01:23.56    size=  144640KiB time=01:42:57.93 bitrate= 191.8kbits/s speed=73.5x elapsed=0:01:24.07    size=  145408KiB time=01:43:29.28 bitrate= 191.8kbits/s speed=73.4x elapsed=0:01:24.60    size=  146176KiB time=01:44:04.56 bitrate= 191.8kbits/s speed=73.4x elapsed=0:01:25.11    size=  146944KiB time=01:44:39.76 bitrate= 191.7kbits/s speed=73.3x elapsed=0:01:25.62    size=  147968KiB time=01:45:15.64 bitrate= 191.9kbits/s speed=73.3x elapsed=0:01:26.14    [out#0/mp3 @ 0000026df50f11c0] video:0KiB audio:148367KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000409%
+2026-03-19 18:25:22,996 - DEBUG - Progress: 0.7% (time: 42.36/6330.28)
+2026-03-19 18:25:22,997 - DEBUG - FFmpeg output 26: size=  148367KiB time=01:45:30.27 bitrate= 192.0kbits/s speed=73.3x elapsed=0:01:26.33
+2026-03-19 18:25:22,997 - DEBUG - Progress: 100.0% (time: 6330.27/6330.28)
+2026-03-19 18:25:22,998 - INFO - FFmpeg process finished with return code: 0
+2026-03-19 18:25:23,005 - INFO - Removed original file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm
+2026-03-19 18:25:23,023 - INFO - Download completed successfully
+2026-03-19 18:26:35,024 - INFO - Starting download for URL: https://www.youtube.com/watch?v=R2aTPWRTTR4&t=3616s
+2026-03-19 18:26:35,025 - INFO - Download type: audio, quality: 360p, audio_quality: низкое
+2026-03-19 18:26:35,026 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:26:35,028 - INFO - Audio quality mode: низкое, format: bestaudio[abr<=128]/bestaudio
+2026-03-19 18:26:35,028 - INFO - Starting yt-dlp download...
+2026-03-19 18:26:36,871 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,872 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,872 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,873 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,876 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,913 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,946 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:36,986 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:37,026 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:37,078 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:37,292 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:37,403 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:37,776 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:37,927 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,082 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,086 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,090 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,092 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,096 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,124 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,156 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,195 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,243 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,310 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,403 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:38,752 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,188 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,371 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,593 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,597 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,600 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,603 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,607 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,617 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,689 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,766 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,829 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,883 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:39,977 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,168 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,613 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,761 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,916 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,920 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,924 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,927 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,930 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,963 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:40,996 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,040 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,083 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,132 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,238 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,466 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,832 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:41,991 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,208 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,209 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,210 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,211 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,212 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,246 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,272 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,314 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,354 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,404 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,499 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:42,727 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,061 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,232 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,360 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,361 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,362 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,363 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,367 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,404 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,445 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,483 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,536 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,586 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,680 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:43,902 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,278 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,485 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,631 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,631 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,632 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,633 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,639 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,675 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,759 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,816 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,886 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:44,991 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,092 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,322 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,673 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,833 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,977 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,978 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,978 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,979 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:45,985 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,028 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,053 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,096 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,147 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,190 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,286 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,507 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:46,984 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,229 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,416 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,418 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,422 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,425 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,425 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,461 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,491 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,540 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,599 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,661 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,815 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:47,944 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:48,088 - DEBUG - Progress hook status: downloading
+2026-03-19 18:26:48,089 - DEBUG - Progress hook status: finished
+2026-03-19 18:26:48,089 - INFO - Downloaded file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm
+2026-03-19 18:26:48,089 - INFO - Target MP3 file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3
+2026-03-19 18:26:48,090 - INFO - Starting audio extraction: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm -> D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3
+2026-03-19 18:26:48,090 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm -vn -acodec mp3 -ab 128k -y D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3
+2026-03-19 18:26:48,118 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-19 18:26:48,118 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-19 18:26:48,119 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-19 18:26:48,119 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-19 18:26:48,120 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-19 18:26:48,120 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-19 18:26:48,121 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-19 18:26:48,121 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-19 18:26:48,123 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-19 18:26:48,123 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-19 18:26:48,128 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm':
+2026-03-19 18:26:48,128 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-19 18:26:48,128 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-19 18:26:48,129 - DEBUG - FFmpeg output 14: Duration: 01:45:30.28, start: 0.000000, bitrate: 110 kb/s
+2026-03-19 18:26:48,129 - INFO - Total duration: 6330.28 seconds
+2026-03-19 18:26:48,130 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-19 18:26:48,130 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-19 18:26:48,130 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-19 18:26:48,131 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-19 18:26:48,134 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).mp3':
+2026-03-19 18:26:48,134 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-19 18:26:48,135 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-19 18:26:48,135 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s (default)
+2026-03-19 18:26:48,135 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-19 18:26:48,136 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-19 18:28:17,229 - DEBUG - FFmpeg output 25: size=     512KiB time=00:00:41.49 bitrate= 101.1kbits/s speed=79.8x elapsed=0:00:00.51    size=    1024KiB time=00:01:19.53 bitrate= 105.5kbits/s speed=76.9x elapsed=0:00:01.03    size=    1792KiB time=00:01:56.54 bitrate= 126.0kbits/s speed=75.3x elapsed=0:00:01.54    size=    2304KiB time=00:02:35.71 bitrate= 121.2kbits/s speed=75.5x elapsed=0:00:02.06    size=    2816KiB time=00:03:14.04 bitrate= 118.9kbits/s speed=75.3x elapsed=0:00:02.57    size=    3584KiB time=00:03:52.22 bitrate= 126.4kbits/s speed=75.1x elapsed=0:00:03.09    size=    4096KiB time=00:04:28.99 bitrate= 124.7kbits/s speed=74.6x elapsed=0:00:03.60    size=    4608KiB time=00:05:08.32 bitrate= 122.4kbits/s speed=74.6x elapsed=0:00:04.13    size=    5376KiB time=00:05:47.16 bitrate= 126.9kbits/s speed=74.7x elapsed=0:00:04.64    size=    5888KiB time=00:06:26.13 bitrate= 124.9kbits/s speed=74.8x elapsed=0:00:05.15    size=    6400KiB time=00:07:04.46 bitrate= 123.5kbits/s speed=74.8x elapsed=0:00:05.67    size=    7168KiB time=00:07:42.62 bitrate= 126.9kbits/s speed=74.8x elapsed=0:00:06.18    size=    7680KiB time=00:08:22.12 bitrate= 125.3kbits/s speed=74.9x elapsed=0:00:06.69    size=    8192KiB time=00:08:59.95 bitrate= 124.3kbits/s speed=74.8x elapsed=0:00:07.21    size=    8960KiB time=00:09:38.56 bitrate= 126.9kbits/s speed=74.8x elapsed=0:00:07.73    size=    9472KiB time=00:10:13.99 bitrate= 126.4kbits/s speed=74.3x elapsed=0:00:08.25    size=    9984KiB time=00:10:49.08 bitrate= 126.0kbits/s speed=  74x elapsed=0:00:08.77    size=   10496KiB time=00:11:24.16 bitrate= 125.7kbits/s speed=73.7x elapsed=0:00:09.28    size=   11008KiB time=00:11:56.59 bitrate= 125.8kbits/s speed=73.2x elapsed=0:00:09.79    size=   11776KiB time=00:12:33.98 bitrate= 127.9kbits/s speed=73.1x elapsed=0:00:10.32    size=   12288KiB time=00:13:09.86 bitrate= 127.4kbits/s speed=72.9x elapsed=0:00:10.82    size=   12800KiB time=00:13:48.04 bitrate= 126.6kbits/s speed=  73x elapsed=0:00:11.34    size=   13312KiB time=00:14:27.04 bitrate= 125.8kbits/s speed=73.1x elapsed=0:00:11.85    size=   14080KiB time=00:15:07.05 bitrate= 127.2kbits/s speed=73.3x elapsed=0:00:12.37    size=   14592KiB time=00:15:45.43 bitrate= 126.4kbits/s speed=73.4x elapsed=0:00:12.88    size=   15360KiB time=00:16:24.14 bitrate= 127.9kbits/s speed=73.4x elapsed=0:00:13.40    size=   15872KiB time=00:17:04.17 bitrate= 127.0kbits/s speed=73.6x elapsed=0:00:13.91    size=   16384KiB time=00:17:42.31 bitrate= 126.3kbits/s speed=73.5x elapsed=0:00:14.44    size=   17152KiB time=00:18:22.22 bitrate= 127.5kbits/s speed=73.7x elapsed=0:00:14.96    size=   17664KiB time=00:19:01.77 bitrate= 126.7kbits/s speed=73.7x elapsed=0:00:15.48    size=   18432KiB time=00:19:40.39 bitrate= 127.9kbits/s speed=73.8x elapsed=0:00:15.99    size=   18944KiB time=00:20:19.20 bitrate= 127.3kbits/s speed=73.8x elapsed=0:00:16.51    size=   19456KiB time=00:20:54.67 bitrate= 127.0kbits/s speed=73.7x elapsed=0:00:17.02    size=   19968KiB time=00:21:30.31 bitrate= 126.8kbits/s speed=73.5x elapsed=0:00:17.55    size=   20480KiB time=00:22:05.90 bitrate= 126.5kbits/s speed=73.4x elapsed=0:00:18.06    size=   20992KiB time=00:22:36.96 bitrate= 126.7kbits/s speed=  73x elapsed=0:00:18.57    size=   21760KiB time=00:23:19.41 bitrate= 127.4kbits/s speed=73.3x elapsed=0:00:19.09    size=   22272KiB time=00:24:01.12 bitrate= 126.6kbits/s speed=73.5x elapsed=0:00:19.61    size=   23040KiB time=00:24:45.48 bitrate= 127.1kbits/s speed=73.8x elapsed=0:00:20.12    size=   23808KiB time=00:25:25.46 bitrate= 127.9kbits/s speed=73.9x elapsed=0:00:20.63    size=   24320KiB time=00:26:04.60 bitrate= 127.3kbits/s speed=  74x elapsed=0:00:21.14    size=   24832KiB time=00:26:44.06 bitrate= 126.8kbits/s speed=  74x elapsed=0:00:21.67    size=   25600KiB time=00:27:21.60 bitrate= 127.8kbits/s speed=  74x elapsed=0:00:22.18    size=   26112KiB time=00:28:00.02 bitrate= 127.3kbits/s speed=  74x elapsed=0:00:22.70    size=   26624KiB time=00:28:40.03 bitrate= 126.8kbits/s speed=74.1x elapsed=0:00:23.21    size=   27392KiB time=00:29:17.95 bitrate= 127.6kbits/s speed=  74x elapsed=0:00:23.74    size=   27904KiB time=00:29:56.73 bitrate= 127.2kbits/s speed=74.1x elapsed=0:00:24.25    size=   28416KiB time=00:30:34.29 bitrate= 126.9kbits/s speed=74.1x elapsed=0:00:24.76    size=   29184KiB time=00:31:12.04 bitrate= 127.7kbits/s speed=  74x elapsed=0:00:25.28    size=   29696KiB time=00:31:49.10 bitrate= 127.4kbits/s speed=  74x elapsed=0:00:25.79    size=   30208KiB time=00:32:27.33 bitrate= 127.1kbits/s speed=  74x elapsed=0:00:26.31    size=   30720KiB time=00:33:01.84 bitrate= 127.0kbits/s speed=73.9x elapsed=0:00:26.82    size=   31232KiB time=00:33:28.89 bitrate= 127.4kbits/s speed=73.5x elapsed=0:00:27.34    size=   31744KiB time=00:33:54.93 bitrate= 127.8kbits/s speed=  73x elapsed=0:00:27.88    size=   32256KiB time=00:34:28.89 bitrate= 127.7kbits/s speed=72.8x elapsed=0:00:28.40    size=   32512KiB time=00:34:54.02 bitrate= 127.2kbits/s speed=72.3x elapsed=0:00:28.96    size=   33024KiB time=00:35:24.64 bitrate= 127.3kbits/s speed=71.9x elapsed=0:00:29.55    size=   33536KiB time=00:35:54.09 bitrate= 127.5kbits/s speed=71.7x elapsed=0:00:30.06    size=   34048KiB time=00:36:30.40 bitrate= 127.3kbits/s speed=71.6x elapsed=0:00:30.57    size=   34816KiB time=00:37:08.37 bitrate= 128.0kbits/s speed=71.7x elapsed=0:00:31.08    size=   35328KiB time=00:37:46.87 bitrate= 127.7kbits/s speed=71.7x elapsed=0:00:31.61    size=   35840KiB time=00:38:26.40 bitrate= 127.3kbits/s speed=71.8x elapsed=0:00:32.12    size=   36352KiB time=00:39:00.62 bitrate= 127.2kbits/s speed=71.7x elapsed=0:00:32.64    size=   37120KiB time=00:39:35.78 bitrate= 128.0kbits/s speed=71.6x elapsed=0:00:33.17    size=   37632KiB time=00:40:09.84 bitrate= 127.9kbits/s speed=71.5x elapsed=0:00:33.68    size=   38144KiB time=00:40:44.52 bitrate= 127.8kbits/s speed=71.5x elapsed=0:00:34.20    size=   38656KiB time=00:41:20.83 bitrate= 127.6kbits/s speed=71.5x elapsed=0:00:34.72    size=   39168KiB time=00:41:55.80 bitrate= 127.5kbits/s speed=71.4x elapsed=0:00:35.23    size=   39680KiB time=00:42:31.15 bitrate= 127.4kbits/s speed=71.4x elapsed=0:00:35.74    size=   40192KiB time=00:43:06.04 bitrate= 127.3kbits/s speed=71.3x elapsed=0:00:36.25    size=   40704KiB time=00:43:34.05 bitrate= 127.6kbits/s speed=71.1x elapsed=0:00:36.77    size=   41216KiB time=00:44:08.73 bitrate= 127.5kbits/s speed=  71x elapsed=0:00:37.30    size=   41728KiB time=00:44:43.53 bitrate= 127.4kbits/s speed=  71x elapsed=0:00:37.81    size=   42240KiB time=00:45:19.08 bitrate= 127.3kbits/s speed=70.9x elapsed=0:00:38.32    size=   43008KiB time=00:45:57.62 bitrate= 127.8kbits/s speed=  71x elapsed=0:00:38.84    size=   43520KiB time=00:46:35.42 bitrate= 127.5kbits/s speed=  71x elapsed=0:00:39.35    size=   44288KiB time=00:47:15.52 bitrate= 128.0kbits/s speed=71.1x elapsed=0:00:39.87    size=   44800KiB time=00:47:54.02 bitrate= 127.7kbits/s speed=71.2x elapsed=0:00:40.39    size=   45312KiB time=00:48:34.58 bitrate= 127.4kbits/s speed=71.2x elapsed=0:00:40.90    size=   46080KiB time=00:49:15.36 bitrate= 127.7kbits/s speed=71.3x elapsed=0:00:41.42    size=   46592KiB time=00:49:54.04 bitrate= 127.5kbits/s speed=71.4x elapsed=0:00:41.93    size=   47360KiB time=00:50:32.95 bitrate= 127.9kbits/s speed=71.5x elapsed=0:00:42.44    size=   47872KiB time=00:51:12.14 bitrate= 127.7kbits/s speed=71.5x elapsed=0:00:42.97    size=   48384KiB time=00:51:48.72 bitrate= 127.5kbits/s speed=71.5x elapsed=0:00:43.48    size=   48896KiB time=00:52:24.04 bitrate= 127.4kbits/s speed=71.5x elapsed=0:00:43.99    size=   49664KiB time=00:52:58.65 bitrate= 128.0kbits/s speed=71.4x elapsed=0:00:44.51    size=   50176KiB time=00:53:32.76 bitrate= 127.9kbits/s speed=71.4x elapsed=0:00:45.02    size=   50688KiB time=00:54:09.33 bitrate= 127.8kbits/s speed=71.3x elapsed=0:00:45.54    size=   51200KiB time=00:54:47.25 bitrate= 127.6kbits/s speed=71.4x elapsed=0:00:46.07    size=   51712KiB time=00:55:25.58 bitrate= 127.4kbits/s speed=71.4x elapsed=0:00:46.58    size=   52480KiB time=00:56:02.66 bitrate= 127.8kbits/s speed=71.4x elapsed=0:00:47.09    size=   52992KiB time=00:56:39.14 bitrate= 127.7kbits/s speed=71.4x elapsed=0:00:47.60    size=   53504KiB time=00:57:16.63 bitrate= 127.5kbits/s speed=71.4x elapsed=0:00:48.12    size=   54272KiB time=00:57:53.56 bitrate= 128.0kbits/s speed=71.4x elapsed=0:00:48.63    size=   54784KiB time=00:58:28.00 bitrate= 127.9kbits/s speed=71.4x elapsed=0:00:49.15    size=   55296KiB time=00:59:02.88 bitrate= 127.9kbits/s speed=71.3x elapsed=0:00:49.67    size=   55808KiB time=00:59:35.90 bitrate= 127.8kbits/s speed=71.2x elapsed=0:00:50.18    size=   56320KiB time=01:00:09.96 bitrate= 127.8kbits/s speed=71.2x elapsed=0:00:50.70    size=   56832KiB time=01:00:44.13 bitrate= 127.8kbits/s speed=71.2x elapsed=0:00:51.21    size=   57344KiB time=01:01:20.49 bitrate= 127.6kbits/s speed=71.1x elapsed=0:00:51.74    size=   57856KiB time=01:01:58.17 bitrate= 127.5kbits/s speed=71.2x elapsed=0:00:52.25    size=   58624KiB time=01:02:37.17 bitrate= 127.8kbits/s speed=71.2x elapsed=0:00:52.77    size=   59136KiB time=01:03:14.66 bitrate= 127.7kbits/s speed=71.2x elapsed=0:00:53.28    size=   59648KiB time=01:03:51.69 bitrate= 127.5kbits/s speed=71.2x elapsed=0:00:53.79    size=   60416KiB time=01:04:28.80 bitrate= 127.9kbits/s speed=71.2x elapsed=0:00:54.31    size=   60928KiB time=01:05:05.73 bitrate= 127.8kbits/s speed=71.2x elapsed=0:00:54.82    size=   61440KiB time=01:05:42.67 bitrate= 127.7kbits/s speed=71.2x elapsed=0:00:55.34    size=   61952KiB time=01:06:15.48 bitrate= 127.7kbits/s speed=71.2x elapsed=0:00:55.85    size=   62720KiB time=01:06:55.84 bitrate= 127.9kbits/s speed=71.2x elapsed=0:00:56.38    size=   63232KiB time=01:07:35.90 bitrate= 127.7kbits/s speed=71.3x elapsed=0:00:56.89    size=   64000KiB time=01:08:19.03 bitrate= 127.9kbits/s speed=71.4x elapsed=0:00:57.40    size=   64512KiB time=01:08:55.75 bitrate= 127.8kbits/s speed=71.4x elapsed=0:00:57.92    size=   65024KiB time=01:09:32.13 bitrate= 127.7kbits/s speed=71.4x elapsed=0:00:58.43    size=   65536KiB time=01:10:08.44 bitrate= 127.6kbits/s speed=71.4x elapsed=0:00:58.94    size=   66304KiB time=01:10:43.92 bitrate= 128.0kbits/s speed=71.4x elapsed=0:00:59.47    size=   66816KiB time=01:11:17.78 bitrate= 128.0kbits/s speed=71.3x elapsed=0:01:00.00    size=   67328KiB time=01:11:50.68 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:00.51    size=   67840KiB time=01:12:24.84 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:01.03    size=   68352KiB time=01:13:02.49 bitrate= 127.8kbits/s speed=71.2x elapsed=0:01:01.54    size=   68864KiB time=01:13:41.71 bitrate= 127.6kbits/s speed=71.2x elapsed=0:01:02.06    size=   69632KiB time=01:14:21.40 bitrate= 127.9kbits/s speed=71.3x elapsed=0:01:02.57    size=   70144KiB time=01:15:00.57 bitrate= 127.7kbits/s speed=71.3x elapsed=0:01:03.09    size=   70912KiB time=01:15:39.21 bitrate= 128.0kbits/s speed=71.4x elapsed=0:01:03.60    size=   71424KiB time=01:16:18.64 bitrate= 127.8kbits/s speed=71.4x elapsed=0:01:04.12    size=   71936KiB time=01:16:56.23 bitrate= 127.7kbits/s speed=71.4x elapsed=0:01:04.64    size=   72704KiB time=01:17:33.52 bitrate= 128.0kbits/s speed=71.4x elapsed=0:01:05.15    size=   73216KiB time=01:18:07.96 bitrate= 127.9kbits/s speed=71.4x elapsed=0:01:05.67    size=   73728KiB time=01:18:42.69 bitrate= 127.9kbits/s speed=71.4x elapsed=0:01:06.18    size=   74240KiB time=01:19:20.95 bitrate= 127.7kbits/s speed=71.4x elapsed=0:01:06.69    size=   74752KiB time=01:20:00.21 bitrate= 127.6kbits/s speed=71.4x elapsed=0:01:07.22    size=   75520KiB time=01:20:38.01 bitrate= 127.9kbits/s speed=71.4x elapsed=0:01:07.74    size=   76032KiB time=01:21:15.04 bitrate= 127.8kbits/s speed=71.4x elapsed=0:01:08.25    size=   76544KiB time=01:21:49.17 bitrate= 127.7kbits/s speed=71.4x elapsed=0:01:08.78    size=   77056KiB time=01:22:23.35 bitrate= 127.7kbits/s speed=71.3x elapsed=0:01:09.30    size=   77568KiB time=01:22:57.00 bitrate= 127.7kbits/s speed=71.3x elapsed=0:01:09.81    size=   78080KiB time=01:23:30.55 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:10.33    size=   78592KiB time=01:24:03.50 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:10.84    size=   79360KiB time=01:24:41.56 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:11.35    size=   79872KiB time=01:25:19.56 bitrate= 127.8kbits/s speed=71.2x elapsed=0:01:11.87    size=   80384KiB time=01:25:57.12 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:12.38    size=   80896KiB time=01:26:30.02 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:12.90    size=   81664KiB time=01:27:07.60 bitrate= 128.0kbits/s speed=71.2x elapsed=0:01:13.41    size=   82176KiB time=01:27:45.31 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:13.93    size=   82688KiB time=01:28:22.82 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:14.44    size=   83200KiB time=01:28:56.88 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:14.97    size=   83712KiB time=01:29:30.57 bitrate= 127.7kbits/s speed=71.1x elapsed=0:01:15.49    size=   84224KiB time=01:30:03.60 bitrate= 127.7kbits/s speed=71.1x elapsed=0:01:16.00    size=   84736KiB time=01:30:34.39 bitrate= 127.7kbits/s speed=  71x elapsed=0:01:16.51    size=   85248KiB time=01:31:09.84 bitrate= 127.7kbits/s speed=  71x elapsed=0:01:17.02    size=   86016KiB time=01:31:50.06 bitrate= 127.9kbits/s speed=71.1x elapsed=0:01:17.54    size=   86528KiB time=01:32:28.10 bitrate= 127.8kbits/s speed=71.1x elapsed=0:01:18.06    size=   87040KiB time=01:33:06.64 bitrate= 127.6kbits/s speed=71.1x elapsed=0:01:18.57    size=   87808KiB time=01:33:45.93 bitrate= 127.9kbits/s speed=71.1x elapsed=0:01:19.09    size=   88320KiB time=01:34:23.49 bitrate= 127.8kbits/s speed=71.1x elapsed=0:01:19.60    size=   88832KiB time=01:35:00.26 bitrate= 127.7kbits/s speed=71.1x elapsed=0:01:20.12    size=   89600KiB time=01:35:37.99 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:20.63    size=   90112KiB time=01:36:14.80 bitrate= 127.8kbits/s speed=71.2x elapsed=0:01:21.15    size=   90624KiB time=01:36:51.74 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:21.66    size=   91136KiB time=01:37:28.15 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:22.18    size=   91904KiB time=01:38:08.95 bitrate= 127.8kbits/s speed=71.2x elapsed=0:01:22.70    size=   92416KiB time=01:38:47.68 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:23.22    size=   93184KiB time=01:39:27.96 bitrate= 127.9kbits/s speed=71.3x elapsed=0:01:23.73    size=   93696KiB time=01:40:03.74 bitrate= 127.8kbits/s speed=71.3x elapsed=0:01:24.24    size=   94208KiB time=01:40:39.14 bitrate= 127.8kbits/s speed=71.2x elapsed=0:01:24.76    size=   94720KiB time=01:41:14.68 bitrate= 127.7kbits/s speed=71.2x elapsed=0:01:25.27    size=   95488KiB time=01:41:52.41 bitrate= 128.0kbits/s speed=71.2x elapsed=0:01:25.80    size=   96000KiB time=01:42:29.28 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:26.31    size=   96512KiB time=01:43:02.61 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:26.83    size=   97024KiB time=01:43:35.76 bitrate= 127.9kbits/s speed=71.2x elapsed=0:01:27.34    size=   97536KiB time=01:44:09.00 bitrate= 127.9kbits/s speed=71.1x elapsed=0:01:27.85    size=   98048KiB time=01:44:41.90 bitrate= 127.9kbits/s speed=71.1x elapsed=0:01:28.37    size=   98560KiB time=01:45:15.36 bitrate= 127.8kbits/s speed=  71x elapsed=0:01:28.88    [out#0/mp3 @ 00000269c2a211c0] video:0KiB audio:98911KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000424%
+2026-03-19 18:28:17,231 - DEBUG - Progress: 0.7% (time: 41.49/6330.28)
+2026-03-19 18:28:17,232 - DEBUG - FFmpeg output 26: size=   98912KiB time=01:45:30.27 bitrate= 128.0kbits/s speed=  71x elapsed=0:01:29.09
+2026-03-19 18:28:17,232 - DEBUG - Progress: 100.0% (time: 6330.27/6330.28)
+2026-03-19 18:28:17,233 - INFO - FFmpeg process finished with return code: 0
+2026-03-19 18:28:17,239 - INFO - Removed original file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm
+2026-03-19 18:28:17,254 - INFO - Download completed successfully
