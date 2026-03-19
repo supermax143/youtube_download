@@ -13,6 +13,9 @@ import queue
 import json
 import subprocess
 import re
+import traceback
+import logging
+from datetime import datetime
 
 class YouTubeDownloaderGUI:
     def __init__(self, root):
@@ -23,6 +26,10 @@ class YouTubeDownloaderGUI:
         
         # Settings file
         self.settings_file = "settings.json"
+        self.log_file = "youtube_downloader.log"
+        
+        # Setup logging
+        self.setup_logging()
         
         # Load settings
         self.settings = self.load_settings()
@@ -47,6 +54,35 @@ class YouTubeDownloaderGUI:
         # Save settings on exit
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
     
+    def setup_logging(self):
+        """Setup logging to file"""
+        try:
+            logging.basicConfig(
+                level=logging.DEBUG,
+                format='%(asctime)s - %(levelname)s - %(message)s',
+                handlers=[
+                    logging.FileHandler(self.log_file, encoding='utf-8'),
+                    logging.StreamHandler()
+                ]
+            )
+            self.logger = logging.getLogger(__name__)
+            self.logger.info("=== YouTube Downlogger Started ===")
+        except Exception as e:
+            print(f"Failed to setup logging: {e}")
+            self.logger = logging.getLogger(__name__)
+    
+    def log_error(self, error_msg, exception=None):
+        """Log error with traceback"""
+        self.logger.error(error_msg)
+        if exception:
+            self.logger.error(f"Exception: {str(exception)}")
+            self.logger.error(f"Traceback: {traceback.format_exc()}")
+        
+        # Also send to GUI
+        self.queue.put(("log", f"ERROR: {error_msg}"))
+        if exception:
+            self.queue.put(("log", f"Exception: {str(exception)}"))
+    
     def load_settings(self):
         """Load settings from file"""
         try:
@@ -63,7 +99,8 @@ class YouTubeDownloaderGUI:
             settings = {
                 'quality': self.quality_var.get(),
                 'output_dir': self.output_dir_var.get(),
-                'download_type': self.download_type_var.get()
+                'download_type': self.download_type_var.get(),
+                'audio_quality': self.audio_quality_var.get()
             }
             with open(self.settings_file, 'w', encoding='utf-8') as f:
                 json.dump(settings, f, ensure_ascii=False, indent=2)
@@ -110,16 +147,24 @@ class YouTubeDownloaderGUI:
                        value="playlist_audio").pack(side=tk.LEFT)
         
         # Quality Selection
-        ttk.Label(main_frame, text="Качество:").grid(row=2, column=0, sticky=tk.W, pady=5)
+        ttk.Label(main_frame, text="Качество видео:").grid(row=2, column=0, sticky=tk.W, pady=5)
         quality_combo = ttk.Combobox(main_frame, textvariable=self.quality_var, 
                                      values=["best", "worst", "1080p", "720p", "480p", "360p"],
                                      state="readonly", width=20)
         quality_combo.grid(row=2, column=1, sticky=tk.W, pady=5, padx=(10, 0))
         
+        # Audio Quality Selection
+        ttk.Label(main_frame, text="Качество аудио:").grid(row=3, column=0, sticky=tk.W, pady=5)
+        self.audio_quality_var = tk.StringVar(value=self.settings.get('audio_quality', 'высокое'))
+        audio_quality_combo = ttk.Combobox(main_frame, textvariable=self.audio_quality_var,
+                                           values=["высокое", "среднее", "низкое"],
+                                           state="readonly", width=20)
+        audio_quality_combo.grid(row=3, column=1, sticky=tk.W, pady=5, padx=(10, 0))
+        
         # Output Directory
-        ttk.Label(main_frame, text="Папка сохранения:").grid(row=3, column=0, sticky=tk.W, pady=5)
+        ttk.Label(main_frame, text="Папка сохранения:").grid(row=4, column=0, sticky=tk.W, pady=5)
         dir_frame = ttk.Frame(main_frame)
-        dir_frame.grid(row=3, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
+        dir_frame.grid(row=4, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         dir_frame.columnconfigure(0, weight=1)
         
         dir_entry = ttk.Entry(dir_frame, textvariable=self.output_dir_var, width=50)
@@ -127,19 +172,19 @@ class YouTubeDownloaderGUI:
         ttk.Button(dir_frame, text="Обзор...", command=self.browse_directory).grid(row=0, column=1, padx=(5, 0))
         
         # Progress Bar
-        ttk.Label(main_frame, text="Прогресс:").grid(row=4, column=0, sticky=tk.W, pady=5)
+        ttk.Label(main_frame, text="Прогресс:").grid(row=5, column=0, sticky=tk.W, pady=5)
         progress_bar = ttk.Progressbar(main_frame, variable=self.progress_var, 
                                       maximum=100, length=400)
-        progress_bar.grid(row=4, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
+        progress_bar.grid(row=5, column=1, sticky=(tk.W, tk.E), pady=5, padx=(10, 0))
         
         # Status Label
         status_label = ttk.Label(main_frame, textvariable=self.status_var, 
                                  font=('Arial', 10, 'bold'))
-        status_label.grid(row=5, column=0, columnspan=2, sticky=tk.W, pady=10)
+        status_label.grid(row=6, column=0, columnspan=2, sticky=tk.W, pady=10)
         
         # Buttons
         button_frame = ttk.Frame(main_frame)
-        button_frame.grid(row=6, column=0, columnspan=2, pady=20)
+        button_frame.grid(row=7, column=0, columnspan=2, pady=20)
         
         self.download_button = ttk.Button(button_frame, text="Скачать", 
                                          command=self.start_download, style="Accent.TButton")
@@ -149,15 +194,15 @@ class YouTubeDownloaderGUI:
         ttk.Button(button_frame, text="Очистить лог", command=self.clear_log).pack(side=tk.LEFT)
         
         # Log Text Area
-        ttk.Label(main_frame, text="Лог загрузки:").grid(row=7, column=0, columnspan=2, 
+        ttk.Label(main_frame, text="Лог загрузки:").grid(row=8, column=0, columnspan=2, 
                                                           sticky=tk.W, pady=(10, 5))
         
         self.log_text = scrolledtext.ScrolledText(main_frame, height=15, width=80, 
                                                   wrap=tk.WORD, font=('Consolas', 9))
-        self.log_text.grid(row=8, column=0, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S), pady=5)
+        self.log_text.grid(row=9, column=0, columnspan=2, sticky=(tk.W, tk.E, tk.N, tk.S), pady=5)
         
         # Configure grid weights for log area
-        main_frame.rowconfigure(8, weight=1)
+        main_frame.rowconfigure(9, weight=1)
     
     def browse_directory(self):
         """Browse for output directory"""
@@ -196,12 +241,18 @@ class YouTubeDownloaderGUI:
     def download_worker(self, url):
         """Worker thread for download process"""
         try:
+            self.logger.info(f"Starting download for URL: {url}")
+            
             download_type = self.download_type_var.get()
             quality = self.quality_var.get()
+            audio_quality = self.audio_quality_var.get()
             output_dir = self.output_dir_var.get()
+            
+            self.logger.info(f"Download type: {download_type}, quality: {quality}, audio_quality: {audio_quality}")
             
             # Create output directory
             Path(output_dir).mkdir(exist_ok=True)
+            self.logger.info(f"Output directory: {output_dir}")
             
             # Configure yt-dlp options
             ydl_opts = {
@@ -214,27 +265,51 @@ class YouTubeDownloaderGUI:
             # Configure for playlist
             if download_type in ['playlist', 'playlist_audio']:
                 ydl_opts['outtmpl'] = os.path.join(output_dir, '%(playlist_title)s/%(playlist_index)s - %(title)s.%(ext)s')
+                self.logger.info("Playlist mode enabled")
             
             # Configure for audio only
             if download_type in ['audio', 'playlist_audio']:
-                ydl_opts['format'] = 'bestaudio/best'
-                # Remove built-in postprocessor to avoid conflicts
+                # For audio only, download best audio stream based on quality
+                if audio_quality == 'высокое':
+                    ydl_opts['format'] = 'bestaudio[abr<=320]/bestaudio'
+                elif audio_quality == 'среднее':
+                    ydl_opts['format'] = 'bestaudio[abr<=192]/bestaudio'
+                else:  # низкое
+                    ydl_opts['format'] = 'bestaudio[abr<=128]/bestaudio'
+                
+                self.logger.info(f"Audio quality mode: {audio_quality}, format: {ydl_opts['format']}")
+                
+                # Completely disable postprocessors
                 ydl_opts['postprocessors'] = []
-                ydl_opts['keepvideo'] = False  # Don't delete original - we'll handle it
+                ydl_opts['writethumbnail'] = False
+                ydl_opts['writedescription'] = False
+                ydl_opts['writeinfojson'] = False
+                ydl_opts['writesubtitles'] = False
+                ydl_opts['allsubtitles'] = False
+                ydl_opts['keepvideo'] = False  # We'll handle file deletion ourselves
                 
                 # Add custom progress hook for audio extraction
                 original_hook = self.progress_hook
                 def audio_progress_hook(d):
-                    if d['status'] == 'finished':
-                        # Start real audio extraction progress
-                        self.queue.put(("status", "Начало конвертации аудио..."))
-                        self.queue.put(("log", "Начало конвертации в MP3..."))
-                        
-                        # Get the downloaded file path
-                        filepath = d.get('filename', '')
-                        if filepath:
-                            output_file = os.path.splitext(filepath)[0] + '.mp3'
-                            self.extract_audio_with_progress(filepath, output_file)
+                    try:
+                        self.logger.debug(f"Progress hook status: {d.get('status')}")
+                        if d['status'] == 'finished':
+                            # Start real audio extraction progress
+                            self.queue.put(("status", "Начало конвертации аудио..."))
+                            self.queue.put(("log", "Начало конвертации в MP3..."))
+                            
+                            # Get the downloaded file path
+                            filepath = d.get('filename', '')
+                            self.logger.info(f"Downloaded file: {filepath}")
+                            
+                            if filepath and os.path.exists(filepath):
+                                output_file = os.path.splitext(filepath)[0] + '.mp3'
+                                self.logger.info(f"Target MP3 file: {output_file}")
+                                self.extract_audio_with_progress(filepath, output_file, audio_quality)
+                            else:
+                                self.log_error(f"Downloaded file not found: {filepath}")
+                    except Exception as e:
+                        self.log_error("Error in audio progress hook", e)
                     
                     original_hook(d)
                 
@@ -245,6 +320,7 @@ class YouTubeDownloaderGUI:
                     'preferedformat': 'mp4',
                 }]
             
+            self.logger.info("Starting yt-dlp download...")
             # Download
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 self.queue.put(("status", "Скачивание..."))
@@ -252,73 +328,111 @@ class YouTubeDownloaderGUI:
                 self.queue.put(("status", "Загрузка завершена!"))
                 self.queue.put(("progress", 100))
                 self.queue.put(("log", "Загрузка успешно завершена!"))
+                self.logger.info("Download completed successfully")
         
         except Exception as e:
+            self.log_error("Error in download worker", e)
             self.queue.put(("error", f"Ошибка загрузки: {str(e)}"))
         
         finally:
             self.queue.put(("finished", None))
     
-    def extract_audio_with_progress(self, input_file, output_file):
+    def extract_audio_with_progress(self, input_file, output_file, audio_quality):
         """Extract audio with real progress tracking using FFmpeg"""
         try:
+            self.logger.info(f"Starting audio extraction: {input_file} -> {output_file}")
+            
+            # Set audio bitrate based on quality
+            if audio_quality == 'высокое':
+                bitrate = '320k'
+            elif audio_quality == 'среднее':
+                bitrate = '192k'
+            else:  # низкое
+                bitrate = '128k'
+            
             # FFmpeg command for audio extraction
             cmd = [
                 'ffmpeg', '-i', input_file,
-                '-vn', '-acodec', 'mp3', '-ab', '192k',
+                '-vn', '-acodec', 'mp3', '-ab', bitrate,
                 '-y', output_file
             ]
+            
+            self.logger.info(f"FFmpeg command: {' '.join(cmd)}")
+            self.queue.put(("log", f"Качество аудио: {audio_quality} ({bitrate})"))
             
             # Start FFmpeg process
             process = subprocess.Popen(
                 cmd,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
-                universal_newlines=True,
+                universal_newlines=False,  # Don't use text mode
                 bufsize=1
             )
             
             total_duration = None
+            line_count = 0
             
-            # Read FFmpeg output line by line
-            for line in iter(process.stdout.readline, ''):
+            # Read FFmpeg output line by line with proper encoding handling
+            while True:
+                line = process.stdout.readline()
                 if not line:
                     break
                 
-                # Parse duration from FFmpeg output
-                duration_match = re.search(r'Duration: (\d{2}):(\d{2}):(\d{2}\.\d{2})', line)
-                if duration_match and total_duration is None:
-                    hours, minutes, seconds = duration_match.groups()
-                    total_duration = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
-                    continue
-                
-                # Parse current time from FFmpeg output
-                time_match = re.search(r'time=(\d{2}):(\d{2}):(\d{2}\.\d{2})', line)
-                if time_match and total_duration:
-                    hours, minutes, seconds = time_match.groups()
-                    current_time = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
+                line_count += 1
+                try:
+                    # Try to decode with UTF-8 first, then fallback to cp1251
+                    try:
+                        line = line.decode('utf-8').strip()
+                    except UnicodeDecodeError:
+                        line = line.decode('cp1251', errors='replace').strip()
                     
-                    # Calculate progress percentage
-                    progress = (current_time / total_duration) * 100
-                    self.queue.put(("progress", progress))
-                    self.queue.put(("status", f"Конвертация в MP3... {progress:.1f}%"))
-                    self.queue.put(("log", f"Конвертация аудио: {progress:.1f}%"))
+                    self.logger.debug(f"FFmpeg output {line_count}: {line}")
+                    
+                    # Parse duration from FFmpeg output
+                    duration_match = re.search(r'Duration: (\d{2}):(\d{2}):(\d{2}\.\d{2})', line)
+                    if duration_match and total_duration is None:
+                        hours, minutes, seconds = duration_match.groups()
+                        total_duration = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
+                        self.logger.info(f"Total duration: {total_duration} seconds")
+                        continue
+                    
+                    # Parse current time from FFmpeg output
+                    time_match = re.search(r'time=(\d{2}):(\d{2}):(\d{2}\.\d{2})', line)
+                    if time_match and total_duration:
+                        hours, minutes, seconds = time_match.groups()
+                        current_time = int(hours) * 3600 + int(minutes) * 60 + float(seconds)
+                        
+                        # Calculate progress percentage
+                        progress = (current_time / total_duration) * 100
+                        self.logger.debug(f"Progress: {progress:.1f}% (time: {current_time}/{total_duration})")
+                        self.queue.put(("progress", progress))
+                        self.queue.put(("status", f"Конвертация в MP3... {progress:.1f}%"))
+                        self.queue.put(("log", f"Конвертация аудио: {progress:.1f}%"))
+                        
+                except Exception as e:
+                    self.logger.warning(f"Failed to process FFmpeg output line {line_count}: {e}")
+                    continue
             
             # Wait for process to complete
-            process.wait()
+            return_code = process.wait()
+            self.logger.info(f"FFmpeg process finished with return code: {return_code}")
             
-            if process.returncode == 0:
+            if return_code == 0:
                 self.queue.put(("progress", 100))
                 self.queue.put(("log", f"Конвертация завершена: {os.path.basename(output_file)}"))
                 # Remove original file
                 try:
                     os.remove(input_file)
-                except:
-                    pass
+                    self.logger.info(f"Removed original file: {input_file}")
+                except Exception as e:
+                    self.logger.warning(f"Failed to remove original file: {e}")
             else:
+                error_msg = f"FFmpeg failed with return code {return_code}"
+                self.log_error(error_msg)
                 self.queue.put(("error", "Ошибка конвертации аудио"))
                 
         except Exception as e:
+            self.log_error("Error in audio extraction", e)
             self.queue.put(("error", f"Ошибка конвертации: {str(e)}"))
     
     def progress_hook(self, d):
