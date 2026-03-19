@@ -315,6 +315,22 @@ class YouTubeDownloaderGUI:
                 
                 ydl_opts['progress_hooks'] = [audio_progress_hook]
             else:
+                # For video, use fallback format selection
+                if quality == '360p':
+                    ydl_opts['format'] = 'best[height<=360]/best[height<=480]/best[height<=720]/best'
+                elif quality == '480p':
+                    ydl_opts['format'] = 'best[height<=480]/best[height<=720]/best'
+                elif quality == '720p':
+                    ydl_opts['format'] = 'best[height<=720]/best'
+                elif quality == '1080p':
+                    ydl_opts['format'] = 'best[height<=1080]/best'
+                elif quality == 'worst':
+                    ydl_opts['format'] = 'worst'
+                else:  # best or any other
+                    ydl_opts['format'] = 'best'
+                
+                self.logger.info(f"Video quality mode: {quality}, format: {ydl_opts['format']}")
+                
                 ydl_opts['postprocessors'] = [{
                     'key': 'FFmpegVideoConvertor',
                     'preferedformat': 'mp4',
