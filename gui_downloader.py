@@ -317,20 +317,22 @@ class YouTubeDownloaderGUI:
             else:
                 # For video, use fallback format selection
                 if quality == '360p':
-                    ydl_opts['format'] = 'best[height<=360]/best[height<=480]/best[height<=720]/best'
+                    ydl_opts['format'] = 'bestvideo[height<=360]+bestaudio/bestvideo[height<=480]+bestaudio/best[height<=360]/best'
                 elif quality == '480p':
-                    ydl_opts['format'] = 'best[height<=480]/best[height<=720]/best'
+                    ydl_opts['format'] = 'bestvideo[height<=480]+bestaudio/bestvideo[height<=720]+bestaudio/best[height<=480]/best'
                 elif quality == '720p':
-                    ydl_opts['format'] = 'best[height<=720]/best'
+                    ydl_opts['format'] = 'bestvideo[height<=720]+bestaudio/best[height<=720]/best'
                 elif quality == '1080p':
-                    ydl_opts['format'] = 'best[height<=1080]/best'
+                    # For 1080p, explicitly merge video and audio streams
+                    ydl_opts['format'] = 'bestvideo[height<=1080]+bestaudio/bestvideo[height<=1080]+bestaudio/best[height<=1080]/best'
                 elif quality == 'worst':
                     ydl_opts['format'] = 'worst'
                 else:  # best or any other
-                    ydl_opts['format'] = 'best'
+                    ydl_opts['format'] = 'bestvideo+bestaudio/best'
                 
                 self.logger.info(f"Video quality mode: {quality}, format: {ydl_opts['format']}")
                 
+                # Add postprocessor for merging video and audio
                 ydl_opts['postprocessors'] = [{
                     'key': 'FFmpegVideoConvertor',
                     'preferedformat': 'mp4',

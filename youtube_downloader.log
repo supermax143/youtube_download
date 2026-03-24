@@ -495,3 +495,594 @@ yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] Q9ON9mqi29U: Requested f
 2026-03-19 18:28:17,233 - INFO - FFmpeg process finished with return code: 0
 2026-03-19 18:28:17,239 - INFO - Removed original file: D:\Downloads\audio\Познавая Мир с Виктором Пузо и Михаил Елизаров (08.12.2010).webm
 2026-03-19 18:28:17,254 - INFO - Download completed successfully
+2026-03-19 18:35:41,483 - INFO - === YouTube Downlogger Started ===
+2026-03-19 18:35:49,103 - INFO - Starting download for URL: https://www.youtube.com/watch?v=2hOLO0UVng4&t=62s
+2026-03-19 18:35:49,104 - INFO - Download type: audio, quality: 360p, audio_quality: низкое
+2026-03-19 18:35:49,104 - INFO - Output directory: D:/Downloads/audio
+2026-03-19 18:35:49,105 - INFO - Audio quality mode: низкое, format: bestaudio[abr<=128]/bestaudio
+2026-03-19 18:35:49,105 - INFO - Starting yt-dlp download...
+2026-03-19 18:36:30,052 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,055 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,056 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,057 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,058 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,097 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,131 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,170 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,212 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:30,263 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:33,182 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:33,232 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:33,457 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:33,584 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:34,092 - DEBUG - Progress hook status: downloading
+2026-03-19 18:36:34,093 - DEBUG - Progress hook status: finished
+2026-03-19 18:36:34,094 - INFO - Downloaded file: D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).webm
+2026-03-19 18:36:34,094 - INFO - Target MP3 file: D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).mp3
+2026-03-19 18:36:34,095 - INFO - Starting audio extraction: D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).webm -> D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).mp3
+2026-03-19 18:36:34,095 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).webm -vn -acodec mp3 -ab 128k -y D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).mp3
+2026-03-19 18:36:34,124 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-19 18:36:34,124 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-19 18:36:34,124 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-19 18:36:34,125 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-19 18:36:34,125 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-19 18:36:34,126 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-19 18:36:34,127 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-19 18:36:34,128 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-19 18:36:34,128 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-19 18:36:34,128 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-19 18:36:34,138 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).webm':
+2026-03-19 18:36:34,138 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-19 18:36:34,139 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-19 18:36:34,139 - DEBUG - FFmpeg output 14: Duration: 00:22:32.62, start: 0.000000, bitrate: 50 kb/s
+2026-03-19 18:36:34,140 - INFO - Total duration: 1352.62 seconds
+2026-03-19 18:36:34,140 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-19 18:36:34,141 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-19 18:36:34,142 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-19 18:36:34,142 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-19 18:36:34,146 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).mp3':
+2026-03-19 18:36:34,146 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-19 18:36:34,147 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-19 18:36:34,147 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s (default)
+2026-03-19 18:36:34,147 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-19 18:36:34,148 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-19 18:36:52,275 - DEBUG - FFmpeg output 25: size=     512KiB time=00:00:42.96 bitrate=  97.6kbits/s speed=83.5x elapsed=0:00:00.51    size=    1024KiB time=00:01:17.85 bitrate= 107.7kbits/s speed=74.8x elapsed=0:00:01.04    size=    1536KiB time=00:01:50.83 bitrate= 113.5kbits/s speed=71.3x elapsed=0:00:01.55    size=    2048KiB time=00:02:23.68 bitrate= 116.8kbits/s speed=69.6x elapsed=0:00:02.06    size=    2816KiB time=00:03:01.80 bitrate= 126.9kbits/s speed=70.5x elapsed=0:00:02.57    size=    3328KiB time=00:03:41.23 bitrate= 123.2kbits/s speed=71.5x elapsed=0:00:03.09    size=    3840KiB time=00:04:20.68 bitrate= 120.7kbits/s speed=  72x elapsed=0:00:03.62    size=    4608KiB time=00:05:00.31 bitrate= 125.7kbits/s speed=72.7x elapsed=0:00:04.13    size=    5120KiB time=00:05:42.74 bitrate= 122.4kbits/s speed=73.8x elapsed=0:00:04.64    size=    5888KiB time=00:06:23.61 bitrate= 125.7kbits/s speed=74.2x elapsed=0:00:05.16    size=    6400KiB time=00:07:01.39 bitrate= 124.4kbits/s speed=74.2x elapsed=0:00:05.67    size=    7168KiB time=00:07:39.96 bitrate= 127.7kbits/s speed=74.3x elapsed=0:00:06.19    size=    7680KiB time=00:08:16.70 bitrate= 126.7kbits/s speed=74.1x elapsed=0:00:06.70    size=    8192KiB time=00:08:57.76 bitrate= 124.8kbits/s speed=74.4x elapsed=0:00:07.23    size=    8960KiB time=00:09:36.55 bitrate= 127.3kbits/s speed=74.5x elapsed=0:00:07.74    size=    9472KiB time=00:10:15.64 bitrate= 126.0kbits/s speed=74.6x elapsed=0:00:08.25    size=    9984KiB time=00:10:54.43 bitrate= 125.0kbits/s speed=74.6x elapsed=0:00:08.76    size=   10752KiB time=00:11:33.74 bitrate= 127.0kbits/s speed=74.8x elapsed=0:00:09.28    size=   11264KiB time=00:12:15.86 bitrate= 125.4kbits/s speed=75.1x elapsed=0:00:09.80    size=   12032KiB time=00:12:56.01 bitrate= 127.0kbits/s speed=75.2x elapsed=0:00:10.31    size=   12544KiB time=00:13:36.14 bitrate= 125.9kbits/s speed=75.4x elapsed=0:00:10.82    size=   13312KiB time=00:14:17.44 bitrate= 127.2kbits/s speed=75.5x elapsed=0:00:11.35    size=   13824KiB time=00:14:57.69 bitrate= 126.2kbits/s speed=75.6x elapsed=0:00:11.86    size=   14592KiB time=00:15:37.17 bitrate= 127.6kbits/s speed=75.7x elapsed=0:00:12.37    size=   15104KiB time=00:16:17.35 bitrate= 126.6kbits/s speed=75.8x elapsed=0:00:12.90    size=   15616KiB time=00:16:51.93 bitrate= 126.4kbits/s speed=75.4x elapsed=0:00:13.41    size=   16128KiB time=00:17:26.18 bitrate= 126.3kbits/s speed=75.1x elapsed=0:00:13.92    size=   16640KiB time=00:18:00.84 bitrate= 126.1kbits/s speed=74.8x elapsed=0:00:14.44    size=   17408KiB time=00:18:38.16 bitrate= 127.5kbits/s speed=74.8x elapsed=0:00:14.95    size=   17920KiB time=00:19:18.93 bitrate= 126.7kbits/s speed=74.9x elapsed=0:00:15.47    size=   18688KiB time=00:19:58.15 bitrate= 127.8kbits/s speed=74.9x elapsed=0:00:15.98    size=   19200KiB time=00:20:33.52 bitrate= 127.5kbits/s speed=74.8x elapsed=0:00:16.49    size=   19712KiB time=00:21:07.65 bitrate= 127.4kbits/s speed=74.5x elapsed=0:00:17.01    size=   20224KiB time=00:21:42.57 bitrate= 127.2kbits/s speed=74.3x elapsed=0:00:17.54    size=   20736KiB time=00:22:22.63 bitrate= 126.5kbits/s speed=74.4x elapsed=0:00:18.05    [out#0/mp3 @ 000001e816340100] video:0KiB audio:21135KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001982%
+2026-03-19 18:36:52,275 - DEBUG - Progress: 3.2% (time: 42.96/1352.62)
+2026-03-19 18:36:52,277 - DEBUG - FFmpeg output 26: size=   21135KiB time=00:22:32.59 bitrate= 128.0kbits/s speed=74.6x elapsed=0:00:18.13
+2026-03-19 18:36:52,277 - DEBUG - Progress: 100.0% (time: 1352.59/1352.62)
+2026-03-19 18:36:52,279 - INFO - FFmpeg process finished with return code: 0
+2026-03-19 18:36:52,280 - INFO - Removed original file: D:\Downloads\audio\10 GREAT GAMES YOU MISSED IN 2025 (Strategy, Tactics, Simulation, Management).webm
+2026-03-19 18:36:52,307 - INFO - Download completed successfully
+2026-03-20 10:39:42,065 - INFO - === YouTube Downlogger Started ===
+2026-03-20 10:39:54,886 - INFO - Starting download for URL: https://www.youtube.com/watch?v=RaYFjcJkgws&t=1384s
+2026-03-20 10:39:54,888 - INFO - Download type: audio, quality: 360p, audio_quality: низкое
+2026-03-20 10:39:54,889 - INFO - Output directory: D:/Downloads/audio
+2026-03-20 10:39:54,889 - INFO - Audio quality mode: низкое, format: bestaudio[abr<=128]/bestaudio
+2026-03-20 10:39:54,889 - INFO - Starting yt-dlp download...
+2026-03-20 10:39:56,553 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,554 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,554 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,555 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,556 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,556 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,580 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,603 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,643 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,691 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,785 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:56,972 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,347 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,493 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,618 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,619 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,620 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,621 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,621 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,628 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,659 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,685 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,723 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,773 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:57,868 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,057 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,434 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,600 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,724 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,725 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,726 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,727 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,728 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,734 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,765 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,803 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:58,920 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:59,018 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:59,129 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:59,356 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:59,732 - DEBUG - Progress hook status: downloading
+2026-03-20 10:39:59,888 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,013 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,013 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,014 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,015 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,015 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,022 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,053 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,079 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,114 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,168 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,345 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,459 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,833 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:00,987 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,129 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,129 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,130 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,131 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,132 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,138 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,171 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,195 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,233 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,284 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,460 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,568 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:01,945 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,107 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,270 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,272 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,272 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,273 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,276 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,280 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,344 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,361 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,466 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,489 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:02,490 - DEBUG - Progress hook status: finished
+2026-03-20 10:40:02,491 - INFO - Downloaded file: D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.webm
+2026-03-20 10:40:02,491 - INFO - Target MP3 file: D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.mp3
+2026-03-20 10:40:02,492 - INFO - Starting audio extraction: D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.webm -> D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.mp3
+2026-03-20 10:40:02,492 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.webm -vn -acodec mp3 -ab 128k -y D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.mp3
+2026-03-20 10:40:03,089 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-20 10:40:03,090 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-20 10:40:03,090 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-20 10:40:03,091 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-20 10:40:03,091 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-20 10:40:03,091 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-20 10:40:03,092 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-20 10:40:03,092 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-20 10:40:03,092 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-20 10:40:03,093 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-20 10:40:03,164 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.webm':
+2026-03-20 10:40:03,164 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-20 10:40:03,165 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-20 10:40:03,165 - DEBUG - FFmpeg output 14: Duration: 01:05:07.46, start: 0.000000, bitrate: 105 kb/s
+2026-03-20 10:40:03,165 - INFO - Total duration: 3907.46 seconds
+2026-03-20 10:40:03,166 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-20 10:40:03,169 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-20 10:40:03,169 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-20 10:40:03,169 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-20 10:40:03,196 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.mp3':
+2026-03-20 10:40:03,196 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-20 10:40:03,197 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-20 10:40:03,198 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s (default)
+2026-03-20 10:40:03,198 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-20 10:40:03,199 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-20 10:40:44,604 - DEBUG - FFmpeg output 25: size=     512KiB time=00:00:36.33 bitrate= 115.4kbits/s speed=70.9x elapsed=0:00:00.51    size=    1024KiB time=00:01:14.95 bitrate= 111.9kbits/s speed=73.2x elapsed=0:00:01.02    size=    1792KiB time=00:02:00.79 bitrate= 121.5kbits/s speed=78.6x elapsed=0:00:01.53    size=    2560KiB time=00:02:54.24 bitrate= 120.4kbits/s speed=84.6x elapsed=0:00:02.06    size=    3328KiB time=00:03:44.85 bitrate= 121.2kbits/s speed=87.5x elapsed=0:00:02.57    size=    4096KiB time=00:04:35.40 bitrate= 121.8kbits/s speed=89.3x elapsed=0:00:03.08    size=    4864KiB time=00:05:20.42 bitrate= 124.4kbits/s speed=89.1x elapsed=0:00:03.59    size=    5632KiB time=00:06:09.36 bitrate= 124.9kbits/s speed=89.6x elapsed=0:00:04.12    size=    6400KiB time=00:07:00.36 bitrate= 124.7kbits/s speed=90.7x elapsed=0:00:04.63    size=    7168KiB time=00:07:50.66 bitrate= 124.8kbits/s speed=91.4x elapsed=0:00:05.14    size=    8192KiB time=00:08:44.44 bitrate= 128.0kbits/s speed=92.6x elapsed=0:00:05.66    size=    8960KiB time=00:09:36.88 bitrate= 127.2kbits/s speed=93.3x elapsed=0:00:06.18    size=    9728KiB time=00:10:32.11 bitrate= 126.1kbits/s speed=94.4x elapsed=0:00:06.69    size=   10496KiB time=00:11:23.18 bitrate= 125.9kbits/s speed=94.7x elapsed=0:00:07.21    size=   11264KiB time=00:12:15.12 bitrate= 125.5kbits/s speed=95.1x elapsed=0:00:07.73    size=   12032KiB time=00:13:03.12 bitrate= 125.9kbits/s speed=  95x elapsed=0:00:08.24    size=   12800KiB time=00:13:55.03 bitrate= 125.6kbits/s speed=95.3x elapsed=0:00:08.75    size=   13568KiB time=00:14:38.23 bitrate= 126.6kbits/s speed=94.7x elapsed=0:00:09.27    size=   14336KiB time=00:15:31.87 bitrate= 126.0kbits/s speed=95.2x elapsed=0:00:09.78    size=   15104KiB time=00:16:20.06 bitrate= 126.2kbits/s speed=95.1x elapsed=0:00:10.30    size=   15872KiB time=00:17:10.63 bitrate= 126.2kbits/s speed=95.2x elapsed=0:00:10.82    size=   16896KiB time=00:18:03.84 bitrate= 127.7kbits/s speed=95.6x elapsed=0:00:11.33    size=   17664KiB time=00:18:56.32 bitrate= 127.3kbits/s speed=95.8x elapsed=0:00:11.85    size=   18432KiB time=00:19:45.00 bitrate= 127.4kbits/s speed=95.6x elapsed=0:00:12.39    size=   19200KiB time=00:20:36.84 bitrate= 127.2kbits/s speed=95.4x elapsed=0:00:12.96    size=   19968KiB time=00:21:30.45 bitrate= 126.8kbits/s speed=95.8x elapsed=0:00:13.47    size=   20992KiB time=00:22:25.68 bitrate= 127.8kbits/s speed=96.2x elapsed=0:00:13.99    size=   21760KiB time=00:23:20.28 bitrate= 127.3kbits/s speed=96.5x elapsed=0:00:14.50    size=   22528KiB time=00:24:16.92 bitrate= 126.7kbits/s speed=  97x elapsed=0:00:15.02    size=   23552KiB time=00:25:10.56 bitrate= 127.7kbits/s speed=97.2x elapsed=0:00:15.53    size=   24320KiB time=00:25:59.61 bitrate= 127.7kbits/s speed=97.1x elapsed=0:00:16.06    size=   25088KiB time=00:26:48.81 bitrate= 127.7kbits/s speed=  97x elapsed=0:00:16.59    size=   25856KiB time=00:27:41.54 bitrate= 127.5kbits/s speed=97.2x elapsed=0:00:17.10    size=   26624KiB time=00:28:31.92 bitrate= 127.4kbits/s speed=97.2x elapsed=0:00:17.61    size=   27392KiB time=00:29:19.32 bitrate= 127.5kbits/s speed=97.1x elapsed=0:00:18.12    size=   28160KiB time=00:30:06.84 bitrate= 127.7kbits/s speed=96.9x elapsed=0:00:18.64    size=   28928KiB time=00:30:54.33 bitrate= 127.8kbits/s speed=96.8x elapsed=0:00:19.16    size=   29696KiB time=00:31:49.46 bitrate= 127.4kbits/s speed=  97x elapsed=0:00:19.68    size=   30464KiB time=00:32:42.38 bitrate= 127.2kbits/s speed=97.2x elapsed=0:00:20.19    size=   31488KiB time=00:33:35.78 bitrate= 128.0kbits/s speed=97.3x elapsed=0:00:20.71    size=   32256KiB time=00:34:29.95 bitrate= 127.7kbits/s speed=97.5x elapsed=0:00:21.22    size=   33024KiB time=00:35:21.40 bitrate= 127.5kbits/s speed=97.6x elapsed=0:00:21.74    size=   33792KiB time=00:36:16.00 bitrate= 127.2kbits/s speed=97.8x elapsed=0:00:22.25    size=   34816KiB time=00:37:08.44 bitrate= 128.0kbits/s speed=97.8x elapsed=0:00:22.77    size=   35584KiB time=00:38:02.23 bitrate= 127.7kbits/s speed=  98x elapsed=0:00:23.29    size=   36352KiB time=00:38:55.94 bitrate= 127.5kbits/s speed=98.1x elapsed=0:00:23.80    size=   37120KiB time=00:39:50.68 bitrate= 127.2kbits/s speed=98.3x elapsed=0:00:24.32    size=   38144KiB time=00:40:45.09 bitrate= 127.8kbits/s speed=98.4x elapsed=0:00:24.83    size=   38656KiB time=00:41:25.17 bitrate= 127.4kbits/s speed=  98x elapsed=0:00:25.34    size=   39680KiB time=00:42:19.80 bitrate= 128.0kbits/s speed=98.2x elapsed=0:00:25.86    size=   40448KiB time=00:43:12.04 bitrate= 127.8kbits/s speed=98.2x elapsed=0:00:26.38    size=   41216KiB time=00:44:03.38 bitrate= 127.7kbits/s speed=98.3x elapsed=0:00:26.90    size=   41984KiB time=00:44:53.61 bitrate= 127.7kbits/s speed=98.2x elapsed=0:00:27.41    size=   42752KiB time=00:45:39.84 bitrate= 127.8kbits/s speed=98.1x elapsed=0:00:27.93    size=   43264KiB time=00:46:15.24 bitrate= 127.7kbits/s speed=97.6x elapsed=0:00:28.44    size=   44032KiB time=00:47:04.03 bitrate= 127.7kbits/s speed=97.5x elapsed=0:00:28.95    size=   44800KiB time=00:47:50.73 bitrate= 127.8kbits/s speed=97.4x elapsed=0:00:29.47    size=   45568KiB time=00:48:39.74 bitrate= 127.9kbits/s speed=97.4x elapsed=0:00:29.98    size=   46336KiB time=00:49:26.47 bitrate= 128.0kbits/s speed=97.3x elapsed=0:00:30.50    size=   47104KiB time=00:50:15.24 bitrate= 128.0kbits/s speed=97.2x elapsed=0:00:31.01    size=   47872KiB time=00:51:05.97 bitrate= 127.9kbits/s speed=97.2x elapsed=0:00:31.53    size=   48640KiB time=00:52:00.50 bitrate= 127.7kbits/s speed=97.4x elapsed=0:00:32.05    size=   49408KiB time=00:52:51.50 bitrate= 127.6kbits/s speed=97.4x elapsed=0:00:32.57    size=   49920KiB time=00:53:30.26 bitrate= 127.4kbits/s speed=  97x elapsed=0:00:33.08    size=   50944KiB time=00:54:22.96 bitrate= 127.9kbits/s speed=97.1x elapsed=0:00:33.60    size=   51712KiB time=00:55:13.03 bitrate= 127.9kbits/s speed=97.1x elapsed=0:00:34.11    size=   52480KiB time=00:56:00.19 bitrate= 127.9kbits/s speed=  97x elapsed=0:00:34.62    size=   52992KiB time=00:56:43.84 bitrate= 127.5kbits/s speed=96.9x elapsed=0:00:35.14    size=   53760KiB time=00:57:34.53 bitrate= 127.5kbits/s speed=96.9x elapsed=0:00:35.66    size=   54528KiB time=00:58:24.24 bitrate= 127.5kbits/s speed=96.9x elapsed=0:00:36.18    size=   55552KiB time=00:59:15.43 bitrate= 128.0kbits/s speed=96.9x elapsed=0:00:36.69    size=   56320KiB time=01:00:05.73 bitrate= 128.0kbits/s speed=96.9x elapsed=0:00:37.21    size=   56832KiB time=01:00:52.24 bitrate= 127.5kbits/s speed=96.8x elapsed=0:00:37.72    size=   57600KiB time=01:01:38.90 bitrate= 127.6kbits/s speed=96.7x elapsed=0:00:38.24    size=   58112KiB time=01:02:08.97 bitrate= 127.7kbits/s speed=96.2x elapsed=0:00:38.75    size=   58880KiB time=01:02:48.21 bitrate= 128.0kbits/s speed=95.9x elapsed=0:00:39.27    size=   59392KiB time=01:03:23.66 bitrate= 127.9kbits/s speed=95.6x elapsed=0:00:39.78    size=   59648KiB time=01:03:53.59 bitrate= 127.5kbits/s speed=95.1x elapsed=0:00:40.30    size=   60160KiB time=01:04:24.72 bitrate= 127.5kbits/s speed=94.7x elapsed=0:00:40.81    size=   60928KiB time=01:05:01.70 bitrate= 127.9kbits/s speed=94.4x elapsed=0:00:41.33    [out#0/mp3 @ 0000029386210cc0] video:0KiB audio:61054KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000686%
+2026-03-20 10:40:44,607 - DEBUG - Progress: 0.9% (time: 36.33/3907.46)
+2026-03-20 10:40:44,608 - DEBUG - FFmpeg output 26: size=   61055KiB time=01:05:07.43 bitrate= 128.0kbits/s speed=94.3x elapsed=0:00:41.43
+2026-03-20 10:40:44,609 - DEBUG - Progress: 100.0% (time: 3907.43/3907.46)
+2026-03-20 10:40:44,635 - INFO - FFmpeg process finished with return code: 0
+2026-03-20 10:40:44,640 - INFO - Removed original file: D:\Downloads\audio\Unity Developer Собеседование C#. Тренировочное интервью на вакансию с актуальными вопросами.webm
+2026-03-20 10:40:44,661 - INFO - Download completed successfully
+2026-03-20 10:40:55,257 - INFO - Starting download for URL: https://www.youtube.com/watch?v=w8iLwDflfUU
+2026-03-20 10:40:55,258 - INFO - Download type: audio, quality: 360p, audio_quality: низкое
+2026-03-20 10:40:55,259 - INFO - Output directory: D:/Downloads/audio
+2026-03-20 10:40:55,259 - INFO - Audio quality mode: низкое, format: bestaudio[abr<=128]/bestaudio
+2026-03-20 10:40:55,259 - INFO - Starting yt-dlp download...
+2026-03-20 10:40:56,720 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,720 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,721 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,722 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,730 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,732 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,761 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,790 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,827 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,882 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:56,977 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,228 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,593 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,741 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,864 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,865 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,866 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,867 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,872 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,874 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,907 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:57,934 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:58,056 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:58,103 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:58,197 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:58,384 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,063 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,233 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,357 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,358 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,358 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,359 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,360 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,365 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,399 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,426 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,463 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,751 - DEBUG - Progress hook status: downloading
+2026-03-20 10:40:59,845 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,036 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,411 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,563 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,686 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,686 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,687 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,688 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,689 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,695 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,729 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,756 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,795 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,843 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,879 - DEBUG - Progress hook status: downloading
+2026-03-20 10:41:00,880 - DEBUG - Progress hook status: finished
+2026-03-20 10:41:00,881 - INFO - Downloaded file: D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.webm
+2026-03-20 10:41:00,881 - INFO - Target MP3 file: D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.mp3
+2026-03-20 10:41:00,881 - INFO - Starting audio extraction: D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.webm -> D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.mp3
+2026-03-20 10:41:00,882 - INFO - FFmpeg command: ffmpeg -i D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.webm -vn -acodec mp3 -ab 128k -y D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.mp3
+2026-03-20 10:41:00,908 - DEBUG - FFmpeg output 1: ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+2026-03-20 10:41:00,908 - DEBUG - FFmpeg output 2: built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+2026-03-20 10:41:00,909 - DEBUG - FFmpeg output 3: configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+2026-03-20 10:41:00,910 - DEBUG - FFmpeg output 4: libavutil      60. 26.100 / 60. 26.100
+2026-03-20 10:41:00,910 - DEBUG - FFmpeg output 5: libavcodec     62. 28.100 / 62. 28.100
+2026-03-20 10:41:00,910 - DEBUG - FFmpeg output 6: libavformat    62. 12.100 / 62. 12.100
+2026-03-20 10:41:00,911 - DEBUG - FFmpeg output 7: libavdevice    62.  3.100 / 62.  3.100
+2026-03-20 10:41:00,911 - DEBUG - FFmpeg output 8: libavfilter    11. 14.100 / 11. 14.100
+2026-03-20 10:41:00,911 - DEBUG - FFmpeg output 9: libswscale      9.  5.100 /  9.  5.100
+2026-03-20 10:41:00,912 - DEBUG - FFmpeg output 10: libswresample   6.  3.100 /  6.  3.100
+2026-03-20 10:41:00,916 - DEBUG - FFmpeg output 11: Input #0, matroska,webm, from 'D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.webm':
+2026-03-20 10:41:00,916 - DEBUG - FFmpeg output 12: Metadata:
+2026-03-20 10:41:00,917 - DEBUG - FFmpeg output 13: encoder         : google/video-file
+2026-03-20 10:41:00,917 - DEBUG - FFmpeg output 14: Duration: 00:38:18.60, start: 0.000000, bitrate: 111 kb/s
+2026-03-20 10:41:00,917 - INFO - Total duration: 2298.6 seconds
+2026-03-20 10:41:00,918 - DEBUG - FFmpeg output 15: Stream #0:0(eng): Audio: opus, 48000 Hz, stereo, fltp (default)
+2026-03-20 10:41:00,918 - DEBUG - FFmpeg output 16: Stream mapping:
+2026-03-20 10:41:00,918 - DEBUG - FFmpeg output 17: Stream #0:0 -> #0:0 (opus (native) -> mp3 (libmp3lame))
+2026-03-20 10:41:00,919 - DEBUG - FFmpeg output 18: Press [q] to stop, [?] for help
+2026-03-20 10:41:00,922 - DEBUG - FFmpeg output 19: Output #0, mp3, to 'D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.mp3':
+2026-03-20 10:41:00,922 - DEBUG - FFmpeg output 20: Metadata:
+2026-03-20 10:41:00,922 - DEBUG - FFmpeg output 21: TSSE            : Lavf62.12.100
+2026-03-20 10:41:00,923 - DEBUG - FFmpeg output 22: Stream #0:0(eng): Audio: mp3, 48000 Hz, stereo, fltp, 128 kb/s (default)
+2026-03-20 10:41:00,925 - DEBUG - FFmpeg output 23: Metadata:
+2026-03-20 10:41:00,925 - DEBUG - FFmpeg output 24: encoder         : Lavc62.28.100 libmp3lame
+2026-03-20 10:41:24,037 - DEBUG - FFmpeg output 25: size=     768KiB time=00:00:50.54 bitrate= 124.5kbits/s speed=99.2x elapsed=0:00:00.50    size=    1536KiB time=00:01:42.91 bitrate= 122.3kbits/s speed= 100x elapsed=0:00:01.02    size=    2304KiB time=00:02:33.72 bitrate= 122.8kbits/s speed=99.6x elapsed=0:00:01.54    size=    3072KiB time=00:03:25.17 bitrate= 122.7kbits/s speed=99.6x elapsed=0:00:02.05    size=    3840KiB time=00:04:17.01 bitrate= 122.4kbits/s speed=99.9x elapsed=0:00:02.57    size=    4608KiB time=00:05:09.07 bitrate= 122.1kbits/s speed= 100x elapsed=0:00:03.09    size=    5632KiB time=00:06:01.63 bitrate= 127.6kbits/s speed= 100x elapsed=0:00:03.60    size=    6400KiB time=00:06:54.79 bitrate= 126.4kbits/s speed= 101x elapsed=0:00:04.11    size=    7168KiB time=00:07:48.09 bitrate= 125.4kbits/s speed= 101x elapsed=0:00:04.63    size=    7936KiB time=00:08:39.57 bitrate= 125.1kbits/s speed= 101x elapsed=0:00:05.15    size=    8704KiB time=00:09:29.73 bitrate= 125.2kbits/s speed= 101x elapsed=0:00:05.66    size=    9472KiB time=00:10:19.41 bitrate= 125.3kbits/s speed= 100x elapsed=0:00:06.18    size=   10240KiB time=00:11:10.84 bitrate= 125.0kbits/s speed= 100x elapsed=0:00:06.70    size=   11264KiB time=00:12:03.16 bitrate= 127.6kbits/s speed= 100x elapsed=0:00:07.21    size=   12032KiB time=00:12:55.92 bitrate= 127.0kbits/s speed= 100x elapsed=0:00:07.73    size=   12800KiB time=00:13:45.48 bitrate= 127.0kbits/s speed= 100x elapsed=0:00:08.24    size=   13568KiB time=00:14:33.12 bitrate= 127.3kbits/s speed=99.7x elapsed=0:00:08.75    size=   14336KiB time=00:15:23.54 bitrate= 127.2kbits/s speed=99.6x elapsed=0:00:09.27    size=   14848KiB time=00:15:59.76 bitrate= 126.7kbits/s speed=  98x elapsed=0:00:09.78    size=   15616KiB time=00:16:46.48 bitrate= 127.1kbits/s speed=97.7x elapsed=0:00:10.30    size=   16384KiB time=00:17:30.07 bitrate= 127.8kbits/s speed=97.1x elapsed=0:00:10.81    size=   17152KiB time=00:18:22.08 bitrate= 127.5kbits/s speed=97.2x elapsed=0:00:11.33    size=   17920KiB time=00:19:10.53 bitrate= 127.6kbits/s speed=97.1x elapsed=0:00:11.85    size=   18688KiB time=00:20:00.36 bitrate= 127.5kbits/s speed=  97x elapsed=0:00:12.36    size=   19456KiB time=00:20:51.69 bitrate= 127.3kbits/s speed=97.1x elapsed=0:00:12.88    size=   20224KiB time=00:21:44.56 bitrate= 127.0kbits/s speed=97.3x elapsed=0:00:13.40    size=   20992KiB time=00:22:36.88 bitrate= 126.7kbits/s speed=97.5x elapsed=0:00:13.91    size=   21760KiB time=00:23:28.48 bitrate= 126.6kbits/s speed=97.6x elapsed=0:00:14.43    size=   22784KiB time=00:24:19.12 bitrate= 127.9kbits/s speed=97.6x elapsed=0:00:14.94    size=   23552KiB time=00:25:08.59 bitrate= 127.9kbits/s speed=97.6x elapsed=0:00:15.46    size=   24320KiB time=00:26:00.93 bitrate= 127.6kbits/s speed=97.7x elapsed=0:00:15.97    size=   25088KiB time=00:26:53.78 bitrate= 127.4kbits/s speed=97.8x elapsed=0:00:16.49    size=   25856KiB time=00:27:46.36 bitrate= 127.1kbits/s speed=97.9x elapsed=0:00:17.01    size=   26624KiB time=00:28:39.16 bitrate= 126.9kbits/s speed=98.1x elapsed=0:00:17.51    size=   27648KiB time=00:29:32.35 bitrate= 127.8kbits/s speed=98.3x elapsed=0:00:18.03    size=   28416KiB time=00:30:25.77 bitrate= 127.5kbits/s speed=98.4x elapsed=0:00:18.55    size=   29184KiB time=00:31:18.79 bitrate= 127.2kbits/s speed=98.5x elapsed=0:00:19.07    size=   29952KiB time=00:32:12.62 bitrate= 127.0kbits/s speed=98.7x elapsed=0:00:19.58    size=   30976KiB time=00:33:05.66 bitrate= 127.8kbits/s speed=98.8x elapsed=0:00:20.10    size=   31744KiB time=00:33:57.84 bitrate= 127.6kbits/s speed=98.8x elapsed=0:00:20.61    size=   32512KiB time=00:34:52.92 bitrate= 127.3kbits/s speed=  99x elapsed=0:00:21.13    size=   33536KiB time=00:35:46.70 bitrate= 128.0kbits/s speed=99.2x elapsed=0:00:21.64    size=   34304KiB time=00:36:40.92 bitrate= 127.7kbits/s speed=99.3x elapsed=0:00:22.16    size=   35072KiB time=00:37:35.66 bitrate= 127.4kbits/s speed=99.4x elapsed=0:00:22.68    [out#0/mp3 @ 000001fece9d0a40] video:0KiB audio:35916KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.001166%
+2026-03-20 10:41:24,038 - DEBUG - Progress: 2.2% (time: 50.54/2298.6)
+2026-03-20 10:41:24,039 - DEBUG - FFmpeg output 26: size=   35916KiB time=00:38:18.58 bitrate= 128.0kbits/s speed=99.4x elapsed=0:00:23.12
+2026-03-20 10:41:24,040 - DEBUG - Progress: 100.0% (time: 2298.58/2298.6)
+2026-03-20 10:41:24,042 - INFO - FFmpeg process finished with return code: 0
+2026-03-20 10:41:24,044 - INFO - Removed original file: D:\Downloads\audio\Собеседование Unity Developer. Узнай какие вопросы тебе зададут!.webm
+2026-03-20 10:41:24,069 - INFO - Download completed successfully
+2026-03-24 12:42:11,128 - INFO - === YouTube Downlogger Started ===
+2026-03-24 12:42:47,014 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:42:47,015 - INFO - Download type: video, quality: 720p, audio_quality: среднее
+2026-03-24 12:42:47,016 - INFO - Output directory: D:/Downloads/video
+2026-03-24 12:42:47,016 - INFO - Video quality mode: 720p, format: best[height<=720]/best
+2026-03-24 12:42:47,016 - INFO - Starting yt-dlp download...
+2026-03-24 12:44:30,465 - INFO - Download completed successfully
+2026-03-24 12:47:16,526 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:47:16,527 - INFO - Download type: video, quality: 1080p, audio_quality: среднее
+2026-03-24 12:47:16,528 - INFO - Output directory: D:/Downloads/video
+2026-03-24 12:47:16,528 - INFO - Video quality mode: 1080p, format: best[height<=1080]/best
+2026-03-24 12:47:16,528 - INFO - Starting yt-dlp download...
+2026-03-24 12:47:46,808 - INFO - === YouTube Downlogger Started ===
+2026-03-24 12:48:01,129 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:48:01,135 - INFO - Download type: audio, quality: best, audio_quality: высокое
+2026-03-24 12:48:01,136 - INFO - Output directory: D:/Downloads/audio
+2026-03-24 12:48:01,136 - INFO - Audio quality mode: высокое, format: bestaudio[abr<=320]/bestaudio
+2026-03-24 12:48:01,136 - INFO - Starting yt-dlp download...
+2026-03-24 12:48:02,928 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:02,931 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:02,934 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:02,937 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:02,940 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:02,961 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:02,979 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,012 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,049 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,097 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,190 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,425 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,767 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:03,928 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,069 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,071 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,072 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,074 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,075 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,106 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,123 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,156 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,204 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,251 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,344 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,547 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:04,908 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,082 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,219 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,220 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,221 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,221 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,224 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,255 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,273 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,304 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,345 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,391 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,485 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:05,672 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,048 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,193 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,341 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,342 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,343 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,344 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,347 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,377 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,395 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,427 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,465 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,513 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,607 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:06,796 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,169 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,336 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,519 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,520 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,521 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,521 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,524 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,557 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,572 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,605 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,645 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,692 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,814 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:07,974 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,346 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,491 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,639 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,640 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,641 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,641 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,643 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,674 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,692 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,724 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,764 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,812 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:08,906 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,093 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,466 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,644 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,768 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,769 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,771 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,773 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,774 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,803 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,821 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,853 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,892 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:09,940 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,033 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,220 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,633 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,779 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,924 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,925 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,926 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,926 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,928 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,959 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:10,977 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,010 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,051 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,097 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,194 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,428 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,754 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:11,937 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,109 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,111 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,114 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,114 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,115 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,143 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,161 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,194 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,232 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,289 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,393 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,581 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:12,956 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,129 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,276 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,276 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,277 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,278 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,280 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,311 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,327 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,384 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,418 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,454 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,548 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:13,734 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,111 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,289 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,427 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,428 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,429 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,430 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,432 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,462 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,480 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,514 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,553 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,601 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,756 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:14,882 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,258 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,410 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,551 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,552 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,553 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,555 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,556 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,564 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,602 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,635 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,673 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,722 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:15,815 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,001 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,375 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,632 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,796 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,797 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,798 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,799 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,801 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,810 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,848 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,880 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,919 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:16,967 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:17,060 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:17,247 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:17,628 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:17,777 - DEBUG - Progress hook status: downloading
+2026-03-24 12:48:29,336 - INFO - === YouTube Downlogger Started ===
+2026-03-24 12:48:41,294 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:48:41,296 - INFO - Download type: video, quality: 1080p, audio_quality: высокое
+2026-03-24 12:48:41,297 - INFO - Output directory: D:/Downloads/audio
+2026-03-24 12:48:41,297 - INFO - Video quality mode: 1080p, format: best[height<=1080]/best
+2026-03-24 12:48:41,297 - INFO - Starting yt-dlp download...
+2026-03-24 12:50:13,226 - INFO - === YouTube Downlogger Started ===
+2026-03-24 12:50:38,877 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:50:38,879 - INFO - Download type: video, quality: 360p, audio_quality: низкое
+2026-03-24 12:50:38,880 - INFO - Output directory: D:/Downloads/audio
+2026-03-24 12:50:38,880 - INFO - Video quality mode: 360p, format: best[height<=360]/best[height<=480]/best[height<=720]/best
+2026-03-24 12:50:38,880 - INFO - Starting yt-dlp download...
+2026-03-24 12:50:42,320 - ERROR - Error in download worker
+2026-03-24 12:50:42,320 - ERROR - Exception: [0;31mERROR:[0m [download] Got error: HTTP Error 503: Service Unavailable
+2026-03-24 12:50:42,386 - ERROR - Traceback: Traceback (most recent call last):
+  File "D:\Git_Hub_Repositories\youtube_download\gui_downloader.py", line 343, in download_worker
+    ydl.download([url])
+    ~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3670, in download
+    self.__download_wrapper(self.extract_info)(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        url, force_generic_extractor=self.params.get('force_generic_extractor', False))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3643, in wrapper
+    res = func(*args, **kwargs)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1687, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1698, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1854, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1913, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3096, in process_video_result
+    self.process_info(new_info)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 189, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3544, in process_info
+    success, real_download = self.dl(temp_filename, info_dict)
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 3285, in dl
+    return fd.download(name, new_info, subtitle)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\downloader\common.py", line 480, in download
+    ret = self.real_download(filename, info_dict)
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\downloader\http.py", line 360, in real_download
+    for retry in RetryManager(self.params.get('retries'), self.report_retry):
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\utils\_utils.py", line 5274, in __iter__
+    self.error_callback(self.error, self.attempt, self.retries)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\downloader\common.py", line 413, in report_retry
+    RetryManager.report_retry(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, count, retries, info=self.__to_screen,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        sleep_func=self.params.get('retry_sleep_functions', {}).get(is_frag or 'http'),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        suffix=f'fragment{"s" if frag_index is None else f" {frag_index}"}' if is_frag else None)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\utils\_utils.py", line 5281, in report_retry
+    return error(f'{e}. Giving up after {count - 1} retries') if count > 1 else error(str(e))
+                                                                                ~~~~~^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\downloader\common.py", line 416, in <lambda>
+    error=IDENTITY if not fatal else lambda e: self.report_error(f'\r[download] Got error: {e}'),
+                                               ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1154, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Maxim\AppData\Local\Programs\Python\Python314\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1093, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [download] Got error: HTTP Error 503: Service Unavailable
+
+2026-03-24 12:51:13,299 - INFO - === YouTube Downlogger Started ===
+2026-03-24 12:51:17,914 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:51:17,916 - INFO - Download type: video, quality: 360p, audio_quality: низкое
+2026-03-24 12:51:17,917 - INFO - Output directory: D:/Downloads/audio
+2026-03-24 12:51:17,917 - INFO - Video quality mode: 360p, format: best[height<=360]/best[height<=480]/best[height<=720]/best
+2026-03-24 12:51:17,917 - INFO - Starting yt-dlp download...
+2026-03-24 12:52:41,420 - INFO - Download completed successfully
+2026-03-24 12:54:40,381 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:54:40,382 - INFO - Download type: video, quality: best, audio_quality: высокое
+2026-03-24 12:54:40,382 - INFO - Output directory: D:/Downloads/audio
+2026-03-24 12:54:40,382 - INFO - Video quality mode: best, format: best
+2026-03-24 12:54:40,382 - INFO - Starting yt-dlp download...
+2026-03-24 12:54:41,741 - INFO - Download completed successfully
+2026-03-24 12:54:51,563 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:54:51,567 - INFO - Download type: video, quality: best, audio_quality: высокое
+2026-03-24 12:54:51,567 - INFO - Output directory: D:/Downloads/audio
+2026-03-24 12:54:51,567 - INFO - Video quality mode: best, format: best
+2026-03-24 12:54:51,567 - INFO - Starting yt-dlp download...
+2026-03-24 12:54:52,991 - INFO - Download completed successfully
+2026-03-24 12:55:27,019 - INFO - === YouTube Downlogger Started ===
+2026-03-24 12:56:32,940 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 12:56:32,942 - INFO - Download type: video, quality: best, audio_quality: высокое
+2026-03-24 12:56:32,942 - INFO - Output directory: D:/Downloads/video
+2026-03-24 12:56:32,942 - INFO - Video quality mode: best, format: best
+2026-03-24 12:56:32,942 - INFO - Starting yt-dlp download...
+2026-03-24 13:00:25,590 - INFO - === YouTube Downlogger Started ===
+2026-03-24 13:00:44,165 - INFO - === YouTube Downlogger Started ===
+2026-03-24 13:01:00,016 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 13:01:00,018 - INFO - Download type: video, quality: best, audio_quality: высокое
+2026-03-24 13:01:00,019 - INFO - Output directory: D:/Downloads/video
+2026-03-24 13:01:00,019 - INFO - Video quality mode: best, format: best
+2026-03-24 13:01:00,019 - INFO - Starting yt-dlp download...
+2026-03-24 13:03:35,502 - INFO - === YouTube Downlogger Started ===
+2026-03-24 13:03:48,973 - INFO - Starting download for URL: https://www.youtube.com/watch?v=1gSnTlUjs-s
+2026-03-24 13:03:48,975 - INFO - Download type: video, quality: 1080p, audio_quality: высокое
+2026-03-24 13:03:48,975 - INFO - Output directory: D:/Downloads/video
+2026-03-24 13:03:48,976 - INFO - Video quality mode: 1080p, format: bestvideo[height<=1080]+bestaudio/bestvideo[height<=1080]+bestaudio/best[height<=1080]/best
+2026-03-24 13:03:48,976 - INFO - Starting yt-dlp download...

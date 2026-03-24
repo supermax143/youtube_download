@@ -1,6 +1,6 @@
 {
-  "quality": "360p",
-  "output_dir": "D:/Downloads/audio",
-  "download_type": "audio",
-  "audio_quality": "низкое"
+  "quality": "best",
+  "output_dir": "D:/Downloads/video",
+  "download_type": "video",
+  "audio_quality": "высокое"
 }
